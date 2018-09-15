@@ -1,2 +1,2 @@
 # aiden0116.github.io
-My personal website
+Aiden Choi's personal website
