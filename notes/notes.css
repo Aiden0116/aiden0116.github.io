@@ -1,10 +1,19 @@
 h1 {
-    color: white;
+    color: darkgreen;
 }
 
 body {
     background-color: blueviolet;
 }
 a {
-    color: olivedrab;
+    color: darkgreen;
+}
+body {
+ text-align: center;
+}
+h2 {
+    color: darkgreen;
+}
+body {
+    font-family: sans-serif;
 }

@@ -1,6 +1,6 @@
 p{
-    color:white
-    
+    color: darkgreen;
+    text-decoration: 
 }
 
 
@@ -13,4 +13,14 @@ h1 {
 
 body {
     text-align: center;
+}
+ul {
+    color: darkgreen
+}
+body {
+    font-family: sans-serif;
+
+}
+ol {
+    color: darkgreen;
 }
