@@ -6,4 +6,9 @@ p{
 p{
     font-style: unset
 }
-body bacground-color:skyblue ;
+
+body {
+    background-color: blueviolet;
+}
+h1 {
+    color: darkolivegreen;
