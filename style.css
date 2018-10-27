@@ -3,12 +3,14 @@ p{
     
 }
 
-p{
-    font-style: unset
-}
 
 body {
     background-color: blueviolet;
 }
 h1 {
     color: darkolivegreen;
+}
+
+body {
+    text-align: center;
+}
