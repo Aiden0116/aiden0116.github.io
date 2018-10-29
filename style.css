@@ -24,3 +24,7 @@ body {
 ol {
     color: darkgreen;
 }
+button {
+    color: darkgreen;
+    text-decoration-color: blueviolet;
+}
