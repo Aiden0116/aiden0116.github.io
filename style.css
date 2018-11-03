@@ -28,3 +28,14 @@ button {
     color: darkgreen;
     text-decoration-color: blueviolet;
 }
+
+a:link,
+a:visited {
+text-decoration: none;
+color: darkgreen;
+
+}
+a:hover {
+    background-color: black;
+}
+
