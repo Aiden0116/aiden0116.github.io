@@ -1,41 +1,51 @@
 p{
-    color: darkgreen;
+    color: black;
     text-decoration: 
 }
 
 
 body {
-    background-color: blueviolet;
+    background-color: goldenrod;
 }
 h1 {
-    color: darkolivegreen;
+    color: black;
 }
 
 body {
     text-align: center;
 }
 ul {
-    color: darkgreen
+    color: black;
 }
 body {
     font-family: sans-serif;
 
+
 }
 ol {
-    color: darkgreen;
+    color: black;
 }
 button {
-    color: darkgreen;
+    color: black;
     text-decoration-color: blueviolet;
 }
 
 a:link,
 a:visited {
 text-decoration: none;
-color: darkgreen;
+color: black;
 
 }
 a:hover {
     background-color: black;
 }
-
+ footer {
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+    margin-top: 20px;
+    padding-top: 20px;
+ }
+#myCanvas {
+    background-color: whitesmoke;
+}
