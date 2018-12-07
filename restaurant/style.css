@@ -1,0 +1,36 @@
+h1 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px
+}
+body{
+    background-color: black;
+}
+a {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    align-self: center;
+}
+p {
+    color: white;
+}
+.hours {
+text-align: left;
+font-size: 30px
+}
+.hour {
+    background-color: rgba(105, 105, 105, 0.452);
+    width: 19%;
+}
+.menu {
+    background-color:  rgba(105, 105, 105, 0.452);
+    width: 19%;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -5,7 +5,7 @@ p{
 
 
 body {
-    background-color: goldenrod;
+    background-color: orange;
 }
 h1 {
     color: black;
@@ -48,4 +48,11 @@ a:hover {
  }
 #myCanvas {
     background-color: whitesmoke;
+}
+img {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin-top: 20px;
+    padding-top: 20px;
 }

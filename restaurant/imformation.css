@@ -1,0 +1,20 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: white
+}
+body {
+    background-color: black;
+}
+p {
+    text-align: left;
+    color: white;
+    
+}
+a {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+}
