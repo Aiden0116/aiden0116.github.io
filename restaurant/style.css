@@ -25,12 +25,29 @@ font-size: 30px
 .hour {
     background-color: rgba(105, 105, 105, 0.452);
     width: 19%;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
 }
 .menu {
     background-color:  rgba(105, 105, 105, 0.452);
     width: 19%;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    font-size: 10px;
 }
 .container {
     display: flex;
     justify-content: space-evenly;
+
 }
+.information {
+    background-color:  rgba(105, 105, 105, 0.452);
+    width: 19%;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+    
