@@ -5,6 +5,7 @@ h1{
 }
 body {
     background-color: black;
+    font-family: fantasy;
 }
 p {
     text-align: left;
@@ -17,4 +18,7 @@ a {
     color: white;
     text-decoration: none;
     border-style: solid;
+}
+img {
+    text-align: right;
 }
