@@ -34,13 +34,17 @@ img {
     align-self: center ;
 }
 .entree{
-    text-align: left;
+    text-align: center;
     }
 h2 {
-        text-align: left;
+        text-align: center;
         color: white;
         font-size: 50px;
 }
 div {
+    text-align: center;
+}
+footer {
+    color:white;
     text-align: center;
 }
