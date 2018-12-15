@@ -64,3 +64,6 @@ footer {
 .entree{
 text-align: left;
 }
+a:hover {
+    color: darkgrey;
+}
