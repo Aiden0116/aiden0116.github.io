@@ -27,4 +27,12 @@ img {
     align-self: center;
     align-content: center;
     align-items: center;
+    text-align: center;
 }
+.menupic1 {
+    text-align: center;
+    align-self: center;
+}
+.entree{
+    text-align: left;
+    }
