@@ -59,6 +59,9 @@ a:hover {
 border-style: none;
     }
  
+canvas {
+    border-style: solid;
+}
 
     
 
