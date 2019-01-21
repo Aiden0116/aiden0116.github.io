@@ -1,7 +1,7 @@
 // variables: something that stores a value that can change over time.
 var canvas;
 var ctx;
-var unit = 50;
+var UNIT = 50;
 
 window.onload = init;
 // when the window loads up, it calls the init function

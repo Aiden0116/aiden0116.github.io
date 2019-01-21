@@ -9,17 +9,22 @@
 var canvas;
 var ctx;
 
-var unit = 10;
+const UNIT = 10;
 window.onload = init;
 
 function init()  {
     canvas = document.getElementById("myCanvas");
     ctx = canvas.getContext("2d");
+    
+    drawMario();
+    drawRuler(5);
+    
+
     // Filling a rectangle
-    ctx.fillRect(0,0,100,100);
-    ctx.fillstyle = "black";
-    ctx.fillRect(0,0,100,100);
-drawRuler(10); 
-ctx.fillRect(60*unit,10*unit,10*unit,10*unit)
+//     ctx.fillRect(0,0,100,100);
+//     ctx.fillstyle = "black";
+//     ctx.fillRect(0,0,100,100);
+// drawRuler(10); 
+// ctx.fillRect(60*unit,10*unit,10*unit,10*unit)
 
 }
