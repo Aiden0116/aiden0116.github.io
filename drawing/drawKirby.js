@@ -59,6 +59,17 @@ function drawBody(){
     ctx.fillRect(7*UNIT,3*UNIT,UNIT,4*UNIT)
     ctx.fillRect(7*UNIT,9*UNIT,UNIT,5*UNIT)
     ctx.fillRect(8*UNIT,6*UNIT,UNIT,8*UNIT)
-    ctx.fillRect(8*UNIT,)
+    ctx.fillRect(9*UNIT,2*UNIT,UNIT,6*UNIT)
+    ctx.fillRect(10*UNIT,2*UNIT,UNIT,4*UNIT)
+    ctx.fillRect(9*UNIT,8*UNIT,UNIT,5*UNIT)
+    ctx.fillRect(10*UNIT,6*UNIT,UNIT,5*UNIT)
+    ctx.fillRect(11*UNIT,2*UNIT,UNIT,8*UNIT)
+    ctx.fillRect(12*UNIT,3*UNIT,UNIT,6*UNIT)
+    ctx.fillRect(13*UNIT,5*UNIT,UNIT,4*UNIT)
+    ctx.fillRect(14*UNIT,6*UNIT,UNIT,3*UNIT)
 
+}
+
+function drawFeet(){
+    ctx.fillStyle = "";
 }
