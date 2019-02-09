@@ -1,10 +1,14 @@
-function drawMario() {
+function drawMario(x,y,scale) {
+   ctx.save();
+   ctx.translate(x*UNIT,y*UNIT);
+   ctx.scale(scale,scale);
    drawEye();
    drawHair();
    drawClothes();
    drawShirt();
    drawSkin();
    // ctx.fillRect(0,0,canvas.width,canvas.height);
+   ctx.restore();
 
 
 }

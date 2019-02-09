@@ -1,8 +1,10 @@
-function drawRainbowBlock(){
-    drawRainbowBlock();
-}
 
-function drawRainbowBlock(){
+
+function drawRainbowBlock(x,y,scale){
+    ctx.save();
+   ctx.translate(x*UNIT,y*UNIT);
+   ctx.scale(scale,scale);
+   
     ctx.fillStyle = "#E93F33";
     ctx.fillRect(0,0,UNIT,UNIT);
     ctx.fillRect(UNIT,UNIT,UNIT,UNIT);
@@ -14,9 +16,10 @@ function drawRainbowBlock(){
     ctx.fillRect(7*UNIT,7*UNIT,UNIT,UNIT,);
     ctx.fillRect(8*UNIT,8*UNIT,UNIT,UNIT,);
     ctx.fillRect(9*UNIT,9*UNIT,UNIT,UNIT,);
-    ctx.fillRect(10*UNIT,10*UNIT,UNIT,UNIT,);
-    ctx.fillStyle = "#F29C33";
+    ctx.fillRect(10*UNIT,10*UNIT,UNIT,UNIT);
     ctx.fillRect(0,0,UNIT,UNIT);
+    ctx.fillStyle = "#F29C33";
+    // ctx.fillRect(0,0,UNIT,UNIT);
     ctx.fillRect(UNIT,0,UNIT,UNIT,);
     ctx.fillRect(UNIT,2*UNIT,UNIT,UNIT);
     ctx.fillRect(2*UNIT,UNIT,UNIT,UNIT);
@@ -33,9 +36,10 @@ function drawRainbowBlock(){
     ctx.fillRect(4*UNIT,5*UNIT,UNIT,UNIT);
     ctx.fillRect(5*UNIT,6*UNIT,UNIT,UNIT);
     ctx.fillRect(6*UNIT,7*UNIT,UNIT,UNIT);
-    ctx.fillRect(7*UNIT,8*UNIT,UNIT,UNIT);
+    ctx.fillRect(7*UNIT,8*UNIT,UNIT,UNIT); 
     ctx.fillRect(8*UNIT,9*UNIT,UNIT,UNIT);
     ctx.fillRect(9*UNIT,10*UNIT,UNIT,UNIT);
+    ctx.fillRect(0,UNIT,UNIT,UNIT);
     ctx.fillStyle = "#7FF21D";
     ctx.fillRect(3*UNIT,0,UNIT,UNIT);
     ctx.fillRect(4*UNIT,UNIT,UNIT,UNIT);
@@ -120,6 +124,8 @@ function drawRainbowBlock(){
     ctx.fillRect(UNIT,8*UNIT,UNIT,UNIT);
     ctx.fillRect(3*UNIT,9*UNIT,UNIT,UNIT);
     ctx.fillRect(4*UNIT,10*UNIT,UNIT,UNIT);
+    ctx.fillRect(2*UNIT,9*UNIT,UNIT,UNIT);
+    ctx.fillRect(3*UNIT,10*UNIT,UNIT,UNIT);
     ctx.fillStyle = "#CF56EA";
     ctx.fillRect(8*UNIT,0,UNIT,UNIT);
     ctx.fillRect(9*UNIT,UNIT,UNIT,UNIT);

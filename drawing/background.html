@@ -8,7 +8,7 @@
 
 <body>
     <header>
-        <h1>Brick</h1>
+        <h1>Background</h1>
     </header>
     <nav>
         <a href="drawing.html">Back</a>
@@ -16,59 +16,36 @@
    <section>
         <canvas id="myCanvas" width="800" height="800"></canvas>
    </section>
+   <script src="drawMario.js"></script>
+   <script src="drawKirby.js"></script>
+   <script src="drawRainbowBlock.js"></script>
    <footer>
 <p>&copy;2019</p>
    </footer>
    <script>
         var canvas;
        var ctx;
-       const UNIT = 2;
+       const UNIT = 5;
        window.onload = init;
        function init(){
            canvas = document.getElementById("myCanvas");
            ctx = canvas.getContext("2d");
+          
+           drawCharacter();
+            
+        function drawCharacter() {
+            drawMario(15,15,1);
+            drawKirby(1,1,1)
+            drawMario(100,30,2);
+            drawRainbowBlock(50,20,3);
 
-           drawBackground();
-           drawBricks(0,360,1000);
+       }
+
            
-           ctx.save();
-            ctx.translate(30*UNIT,328*UNIT);
-           ctx.scale(2,2);
-           drawMario();
-           ctx.restore();
-
-           ctx.save();
-           ctx.scale(10,10);
-           ctx.translate(18*UNIT,20*UNIT);
-           drawMario();
-           ctx.restore();
-
-            ctx.save();
-           ctx.scale(5,5);
-           ctx.translate(10*UNIT,10*UNIT);
-           drawKirby();
-           ctx.restore();
-           
-           ctx.save();
-            ctx.translate(230*UNIT,343*UNIT);
-           ctx.scale(1,1);
-           drawMario();
-           ctx.restore();
-
-           ctx.save();
-            ctx.translate(245*UNIT,343*UNIT);
-           ctx.scale(1,1);
-           drawMario();
-           ctx.restore();
-
-
-
-
-         
        }
        function drawBackground(){
-           ctx.fillStyle ="purple";
-           ctx.fillRect(0,0,canvas.width,canvas.height);
+        //    ctx.fillStyle ="white";
+        //    ctx.fillRect(0,0,canvas.width,canvas.height);
        }
    </script>
   
