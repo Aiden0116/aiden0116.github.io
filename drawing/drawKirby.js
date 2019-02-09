@@ -1,6 +1,7 @@
 function drawKirby() {
  drawOutline();
  drawBody();
+ drawFeet();
 }
 
 function drawOutline() {
@@ -71,5 +72,15 @@ function drawBody(){
 }
 
 function drawFeet(){
-    ctx.fillStyle = "";
+    ctx.fillStyle = "#E9507E";
+    ctx.fillRect(4*UNIT,6*UNIT,2*UNIT,UNIT);
+    ctx.fillRect(9*UNIT,6*UNIT,2*UNIT,UNIT);
+    ctx.fillRect(UNIT,14*UNIT,5*UNIT,UNIT);
+    ctx.fillRect(2*UNIT,13*UNIT,2*UNIT,UNIT);
+    ctx.fillRect(11*UNIT,14*UNIT,2*UNIT,UNIT)
+    ctx.fillRect(10*UNIT,13*UNIT,4*UNIT,UNIT);
+    ctx.fillRect(11*UNIT,11*UNIT,4*UNIT,2*UNIT);
+    ctx.fillRect(12*UNIT,10*UNIT,3*UNIT,UNIT);
+
+    
 }

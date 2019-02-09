@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>MARIO</h1>
+    </header>
+    <nav>
+        <a href="drawing.html">Back</a>
+    </nav>
+   <section>
+        <canvas id="myCanvas" width="1000" height="1000"></canvas>
+   </section>
+   <footer>
+<p>&copy;2019</p>
+   </footer>
+   <script>
+        var canvas;
+       var ctx;
+       const UNIT = 25;
+       window.onload = init;
+       function init(){
+           canvas = document.getElementById("myCanvas");
+           ctx = canvas.getContext("2d");
+           drawMario();
+       }
+   </script>
+   <script src="drawMario.js"></script>
+   <script src="kirby.js"></script>
+   <script src="ruler.js"></script>
+</body>
+
+</html>

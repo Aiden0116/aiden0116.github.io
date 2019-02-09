@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Scale</h1>
+    </header>
+    <nav>
+        <a href="drawing.html">Back</a>
+    </nav>
+   <section>
+        <canvas id="myCanvas" width="1000" height="1000"></canvas>
+   </section>
+   <footer>
+<p>&copy;2019</p>
+
+   </footer>
+   <script>
+       var canvas;
+       var ctx;
+       const UNIT = 10;
+       window.onload = init;
+       function init(){
+           canvas = document.getElementById("myCanvas");
+           ctx = canvas.getContext("2d");
+           ctx.save();
+           ctx.scale(0.5,0.5);
+           drawKirby();
+           ctx.restore();
+
+           ctx.save();
+           ctx.translate(15*UNIT,15*UNIT);
+           drawKirby();
+           ctx.restore();
+           drawRuler(5);
+
+           ctx.save();
+           ctx.translate(40*UNIT,10*UNIT)
+           ctx.scale(0.8,0.8);
+           drawKirby();
+           ctx.restore();
+
+       }
+   </script>
+   
+   <script src="drawKirby.js"></script>
+   <script src="drawSprite.js"></script>
+   <script src="ruler.js"></script>
+</body>
+
+</html>

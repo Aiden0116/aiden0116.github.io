@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>RainBowBlock</h1>
+    </header>
+    <nav>
+        <a href="drawing.html">Back</a>
+    </nav>
+   <section>
+        <canvas id="myCanvas" width="800" height="800"></canvas>
+   </section>
+   <footer>
+<p>&copy;2019</p>
+   </footer>
+   <script>
+        var canvas;
+       var ctx;
+       const UNIT = 2;
+       window.onload = init;
+       function init(){
+           canvas = document.getElementById("myCanvas");
+           ctx = canvas.getContext("2d");
+
+           drawBackground();
+           drawBricks(0,360,1000);
+           
+           ctx.save();
+            ctx.translate(30*UNIT,328*UNIT);
+           ctx.scale(2,2);
+           drawMario();
+           ctx.restore();
+
+           ctx.save();
+           ctx.scale(10,10);
+           ctx.translate(18*UNIT,20*UNIT);
+           drawMario();
+           ctx.restore();
+
+            ctx.save();
+           ctx.scale(5,5);
+           ctx.translate(10*UNIT,10*UNIT);
+           drawKirby();
+           ctx.restore();
+           
+           ctx.save();
+            ctx.translate(230*UNIT,343*UNIT);
+           ctx.scale(1,1);
+           drawMario();
+           ctx.restore();
+
+           ctx.save();
+            ctx.translate(245*UNIT,343*UNIT);
+           ctx.scale(1,1);
+           drawMario();
+           ctx.restore();
+
+
+
+
+         
+       }
+       function drawBackground(){
+           ctx.fillStyle ="purple";
+           ctx.fillRect(0,0,canvas.width,canvas.height);
+       }
+   </script>
+   <script src="drawBricks.js"></script>
+   <script src="ruler.js"></script>
+   <script src="drawMario.js"></script>
+   <script src="drawKirby.js"></script>
+</body>
+
+</html>
