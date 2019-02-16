@@ -22,15 +22,22 @@
     <script>
         var canvas;
         var ctx;
-        const UNIT = 2;
+        const UNIT = 10;
         window.onload = init;
         function init() {
             canvas = document.getElementById("myCanvas");
             ctx = canvas.getContext("2d");
-            drawGrounds();
+            drawGrounds(0,66,5);
+            drawSans(9,36,1);
+            drawMario(40,50);
+
         }
     </script>
     <script src="drawGround.js"></script>
+    <script src="drawWoodBlock.js"></script>
+    <script src="drawSans.js"></script>
+    <script src="drawMario.js"></script>
+
 
 </body>
 

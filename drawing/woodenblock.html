@@ -8,7 +8,7 @@
 
 <body>
     <header>
-        <h1>Brick</h1>
+        <h1>Wood</h1>
     </header>
     <nav>
         <a href="drawing.html">Back</a>
@@ -22,12 +22,12 @@
    <script>
         var canvas;
        var ctx;
-       const UNIT = 2;
+       const UNIT = 10;
        window.onload = init;
        function init(){
            canvas = document.getElementById("myCanvas");
            ctx = canvas.getContext("2d");
-           drawBackground();
+        //    drawBackground();
            drawWoodBlock();
 
        }

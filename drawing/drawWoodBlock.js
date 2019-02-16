@@ -10,9 +10,9 @@ function drawBricks (x,y, numBricks){
         ctx.translate(i*10*UNIT+x*UNIT,y*UNIT);
         drawBrick();
         ctx.restore();
-         ctx.save();
-        ctx.translate(i*10*UNIT+x*UNIT,y*UNIT);
-        ctx.restore();
+        //  ctx.save();
+        // ctx.translate(i*10*UNIT+x*UNIT,y*UNIT);
+        // ctx.restore();
     }
 }
 

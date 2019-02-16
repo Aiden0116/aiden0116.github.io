@@ -3,8 +3,8 @@ function drawSans(x,y,scale) {
     ctx.translate(x*UNIT,y*UNIT);
     ctx.scale(scale,scale);
     drawHead();
-    drawSans();
-    drawCoat();
+    drawSansbody();
+    // drawCoat();
     ctx.restore();
 }
 function drawHead() {
@@ -46,7 +46,7 @@ function drawHead() {
     ctx.fillRect(4*UNIT,2*UNIT,UNIT,2*UNIT);
     
 }
-function drawSans() {
+function drawSansbody() {
     ctx.fillStyle = "black";
     
     ctx.fillRect(6*UNIT,17*UNIT,3*UNIT,1*UNIT);
