@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Brick</h1>
+    </header>
+    <nav>
+        <a href="drawing.html">Back</a>
+    </nav>
+   <section>
+        <canvas id="myCanvas" width="800" height="800"></canvas>
+   </section>
+   <footer>
+<p>&copy;2019</p>
+   </footer>
+   <script>
+        var canvas;
+       var ctx;
+       const UNIT = 2;
+       window.onload = init;
+       function init(){
+           canvas = document.getElementById("myCanvas");
+           ctx = canvas.getContext("2d");
+           drawBackground();
+           drawWoodBlock();
+
+       }
+   </script>
+   <script src="drawWoodBlock.js"></script>
+   <script src="ruler.js"></script>
+   <script src="drawMario.js"></script>
+   <script src="drawKirby.js"></script>
+</body>
+
+</html>
