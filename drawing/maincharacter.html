@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Main Character</h1>
+    </header>
+    <nav>
+        <a href="drawing.html">Back</a>
+    </nav>
+    <section>
+        <canvas id="myCanvas" width="1000" height="1000"></canvas>
+    </section>
+    <footer>
+        <p>&copy;2019</p>
+    </footer>
+    <script>
+        var canvas;
+        var ctx;
+        const UNIT = 15;
+        window.onload = init;
+        function init() {
+            
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            drawMario1(0,0);
+            drawMario2(20,0);
+            drawMario3(50,0);
+
+        }
+
+
+    </script>
+    <script src="drawMainCharacter.js"></script>
+    <script src="ruler.js"></script>
+</body>
+
+</html>
