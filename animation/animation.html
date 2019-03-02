@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Animation</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Back</a>
+    </nav>
+    <section>
+        <canvas id="myCanvas" width="1000" height="700"></canvas>
+    </section>
+    <footer>
+        <p>&copy;2019</p>
+    </footer>
+    <script>
+        var canvas;
+        var ctx;
+        var requestId;
+        var positionX= 80
+        const UNIT = 10;
+        window.onload = init;
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            startAnimation();
+        }
+        function startAnimation() {
+            requestId = requestAnimationFrame(animationLoop);
+        }
+        function animationLoop(timeStamp) {
+            // First line inside animation
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawMario1(positionX,0);
+            drawWoodBlock(0,0);
+            changePositionX();
+            // Last line inside animation loop
+            requestId = requestAnimationFrame(animationLoop);
+        }
+        function changePositionX(){
+            positionX -=0.5
+        }
+    </script>
+    <script src = "../drawing/drawMainCharacter.js"></script>
+    <script src="../drawing/drawWoodBlock.js"></script>
+
+
+</body>
+
+</html>
