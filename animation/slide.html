@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
     <header>
         <h1>Slide</h1>
@@ -24,41 +26,70 @@
         var canvas;
         var ctx;
         var requestId;
-        var positionX= 0
-        const UNIT = 10;
+        var positionX = 0;
+        var isFacingRight = true;
+        const UNIT = 7;
         window.onload = init;
         function init() {
             canvas = document.getElementById("myCanvas");
             ctx = canvas.getContext("2d");
             startAnimation();
-            
+
 
         }
         function startAnimation() {
             requestId = requestAnimationFrame(animationLoop);
-        }      
+        }
         function animationLoop(timeStamp) {
             // First line inside animation
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            animateMario();
             drawBackground();
-         
-      
+            changePositionX();
+            changeIsFacingRight();
+            animateMario();
+            
+
+
             // Last line inside animation loop
             requestId = requestAnimationFrame(animationLoop);
         }
-        function drawBackground (){
+        function drawBackground() {
             // ctx.fillStyle="lightblue"
             // ctx.fillRect(0,0,canvas.width,canvas.height);
-            drawWoodBlocks(0,55,10);
-            drawCloud(2,2,5);        
+            drawWoodBlocks(0, 84, 17);
+            drawCloud(2, 7, 7);
+            drawCloud(50, 8, 8);
+            drawCloud(98, 6, 5);
         }
-        function animateMario(){
-            drawMario1(0,39);
+        function animateMario() {
+            if (isFacingRight == true){
+                drawMario1(positionX, 68, 1);
+            } else if (isFacingRight == false) {
+                ctx.save();
+                ctx.scale(-1,1);
+                drawMario1(-positionX,68,1);
+                ctx.restore();
+            }
+        }
+        function changePositionX() {
+            if (isFacingRight == true) {
+                positionX += 1;
+            } else if (isFacingRight == false) {
+                positionX -= 1;
+            }
+        }
+
+        function changeIsFacingRight() {
+            if (positionX > canvas.width / UNIT+4*UNIT) {
+                isFacingRight = false;
+            } else if (positionX < -4*UNIT) {
+                isFacingRight = true;
+            }
         }
     </script>
     <script src="../drawing/drawWoodBlock.js"></script>
-    <script src ="../drawing/drawCloud.js"></script>
+    <script src="../drawing/drawCloud.js"></script>
     <script src="../drawing/drawMainCharacter.js"></script>
 </body>
+
 </html>

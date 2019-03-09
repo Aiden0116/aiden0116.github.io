@@ -1,27 +1,25 @@
-function drawMario1(x,
-    
-    
-    
-    
-    y) {
+function drawMario1(x,y,scale) {
     ctx.save();
-    ctx.translate(x*UNIT,y*UNIT);
+    ctx.translate(x * UNIT, y * UNIT);
+    ctx.scale(scale,scale);
     drawMarioBody1();
     drawMarioHead1();
     ctx.restore();
 }
 
-function drawMario2(x,y) {
+function drawMario2(x, y, scale) {
     ctx.save();
-    ctx.translate(x*UNIT,y*UNIT);
+    ctx.translate(x * UNIT, y * UNIT);
+    ctx.scale(scale,scale);
     drawMarioBody2();
     drawMarioHead2();
     ctx.restore();
 }
 
-function drawMario3(x,y) {
+function drawMario3(x, y, scale) {
     ctx.save();
-    ctx.translate(x*UNIT,y*UNIT);
+    ctx.translate(x * UNIT, y * UNIT);
+    ctx.scale(scale,scale);
     drawMarioHead3();
     drawMarioBody3();
     ctx.restore();
@@ -92,7 +90,7 @@ function drawMarioBody1() {
     ctx.fillStyle = "orange";
     ctx.fillRect(4 * UNIT, 10 * UNIT, UNIT, UNIT);
     ctx.fillRect(7 * UNIT, 10 * UNIT, UNIT, UNIT);
-    
+
     ctx.fillStyle = "#843818";
     ctx.fillRect(0, 15 * UNIT, 4 * UNIT, UNIT);
     ctx.fillRect(8 * UNIT, 15 * UNIT, 4 * UNIT, UNIT);
@@ -129,7 +127,7 @@ function drawMarioBody2() {
     ctx.fillRect(3 * UNIT, 11 * UNIT, UNIT, 3 * UNIT);
     ctx.fillRect(2 * UNIT, 12 * UNIT, UNIT, UNIT);
     ctx.fillRect(7 * UNIT, 10 * UNIT, UNIT, 3 * UNIT);
-    ctx.fillRect(9*UNIT,11*UNIT,3*UNIT,3*UNIT);
+    ctx.fillRect(9 * UNIT, 11 * UNIT, 3 * UNIT, 3 * UNIT);
 
     ctx.fillStyle = "red";
     ctx.fillRect(5 * UNIT, 0, 5 * UNIT, UNIT);
@@ -143,18 +141,18 @@ function drawMarioBody2() {
 
     ctx.fillStyle = "#843818";
     ctx.fillRect(13 * UNIT, 10 * UNIT, UNIT, UNIT);
-    ctx.fillRect(12*UNIT,11*UNIT,2*UNIT,3*UNIT);
+    ctx.fillRect(12 * UNIT, 11 * UNIT, 2 * UNIT, 3 * UNIT);
     ctx.fillRect(UNIT, 13 * UNIT, 2 * UNIT, 2 * UNIT);
     ctx.fillRect(2 * UNIT, 15 * UNIT, 2 * UNIT, UNIT);
     ctx.fillRect(3 * UNIT, 14 * UNIT, UNIT, UNIT);
-    ctx.fillRect(4*UNIT,15*UNIT,UNIT,UNIT);
+    ctx.fillRect(4 * UNIT, 15 * UNIT, UNIT, UNIT);
     ctx.fillRect(3 * UNIT, 3 * UNIT, 3 * UNIT, 3 * UNIT);
     ctx.fillRect(4 * UNIT, 5 * UNIT, UNIT, UNIT);
     ctx.fillRect(4 * UNIT, 2 * UNIT, 3 * UNIT, UNIT);
     ctx.fillRect(9 * UNIT, 5 * UNIT, 4 * UNIT, UNIT);
     ctx.fillRect(10 * UNIT, 4 * UNIT, UNIT, UNIT);
     ctx.fillRect(9 * UNIT, 2 * UNIT, UNIT, 2 * UNIT);
-    ctx.fillRect(6*UNIT,4*UNIT,UNIT,UNIT);
+    ctx.fillRect(6 * UNIT, 4 * UNIT, UNIT, UNIT);
 }
 
 function drawMarioHead3() {
@@ -162,7 +160,7 @@ function drawMarioHead3() {
     ctx.fillRect(UNIT, 3 * UNIT, UNIT, 2 * UNIT);
     ctx.fillRect(2 * UNIT, 5 * UNIT, 4 * UNIT, 2 * UNIT);
     ctx.fillRect(3 * UNIT, 3 * UNIT, UNIT, UNIT);
-    ctx.fillRect(6 * UNIT, 6 * UNIT,3 * UNIT, UNIT);
+    ctx.fillRect(6 * UNIT, 6 * UNIT, 3 * UNIT, UNIT);
     ctx.fillRect(4 * UNIT, 2 * UNIT, 2 * UNIT, 3 * UNIT);
     ctx.fillRect(6 * UNIT, 4 * UNIT, UNIT, UNIT);
     ctx.fillRect(7 * UNIT, 2 * UNIT, UNIT, 2 * UNIT);
@@ -171,7 +169,7 @@ function drawMarioHead3() {
     ctx.fillRect(3 * UNIT, 11 * UNIT, 2 * UNIT, 2 * UNIT);
     ctx.fillRect(5 * UNIT, 11 * UNIT, UNIT, UNIT);
     ctx.fillRect(8 * UNIT, 9 * UNIT, UNIT, UNIT);
-    
+
     ctx.fillStyle = "#813717";
     ctx.fillRect(0, 3 * UNIT, UNIT, 3 * UNIT);
     ctx.fillRect(UNIT, 5 * UNIT, UNIT, UNIT);
@@ -216,7 +214,7 @@ function drawMarioBody3() {
     ctx.fillRect(8 * UNIT, 14 * UNIT, UNIT, UNIT);
 
     ctx.fillStyle = "#FCE6B1";
-    ctx.fillRect(5*UNIT,9*UNIT,UNIT,UNIT);
+    ctx.fillRect(5 * UNIT, 9 * UNIT, UNIT, UNIT);
 
 
 

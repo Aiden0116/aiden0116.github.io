@@ -1,4 +1,4 @@
-function drawWoodBlocks (x,y,numBricks){
+function drawWoodBlocks (x,y,numBricks,scale){
     // for loop
     for (var i = 0; i<numBricks; i++)  {
         //  in the first loop, i = 0.
@@ -8,6 +8,7 @@ function drawWoodBlocks (x,y,numBricks){
         //  in the fifth loop, i = 4.
         ctx.save();
         ctx.translate(i*10*UNIT+x*UNIT,y*UNIT);
+        ctx.scale(scale,scale);
         drawWoodBlock();
         ctx.restore();
     }
