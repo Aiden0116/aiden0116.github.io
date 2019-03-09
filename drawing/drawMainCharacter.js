@@ -1,4 +1,9 @@
-function drawMario1(x,y) {
+function drawMario1(x,
+    
+    
+    
+    
+    y) {
     ctx.save();
     ctx.translate(x*UNIT,y*UNIT);
     drawMarioBody1();

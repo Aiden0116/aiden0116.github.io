@@ -47,7 +47,7 @@ a:hover {
     padding-top: 20px;
  }
 #myCanvas {
-    background-color: orange;
+    background-color: lightblue;
 }
  img {border-style: solid;
     border-color: black;
@@ -61,7 +61,7 @@ border-style: none;
  
 canvas {
     border-style: solid;
-    background-color: whitesmoke;
+    background-color: lightblue;
 }
 
     

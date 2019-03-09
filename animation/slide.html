@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link rel="stylesheet" href="../style.css">
-
 </head>
-
 <body>
     <header>
-        <h1>Animation</h1>
+        <h1>Slide</h1>
     </header>
     <nav>
         <a href="../index.html">Back</a>
         <br>
-    
         <a href="slide.html">Slide</a>
+        <br>
+        <a href="animation.html">Animation</a>
     </nav>
     <section>
         <canvas id="myCanvas" width="1000" height="700"></canvas>
@@ -33,41 +31,34 @@
             canvas = document.getElementById("myCanvas");
             ctx = canvas.getContext("2d");
             startAnimation();
+            
 
         }
         function startAnimation() {
             requestId = requestAnimationFrame(animationLoop);
-        }
+        }      
         function animationLoop(timeStamp) {
             // First line inside animation
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            drawMario1(positionX,39);
-            drawWoodBlock(55,55);
-            drawWoodBlock(5,55);
-            drawWoodBlock(0,55);
-            changePositionX();
-            drawWoodBlock(32,55);
-            drawWoodBlock(48,55);
-            drawWoodBlock(64,55);
-            drawWoodBlock(80,55);
-            drawWoodBlock(90,55);
-            drawWoodBlock(20,55);
-            ctx.save();
-           ctx.scale(5,5);
-           drawCloud();
-           ctx.restore();
+            animateMario();
+            drawBackground();
+         
+      
             // Last line inside animation loop
             requestId = requestAnimationFrame(animationLoop);
         }
-        function changePositionX(){
-            positionX += 1
+        function drawBackground (){
+            // ctx.fillStyle="lightblue"
+            // ctx.fillRect(0,0,canvas.width,canvas.height);
+            drawWoodBlocks(0,55,10);
+            drawCloud(2,2,5);        
+        }
+        function animateMario(){
+            drawMario1(0,39);
         }
     </script>
-    <script src = "../drawing/drawMainCharacter.js"></script>
     <script src="../drawing/drawWoodBlock.js"></script>
-    <script src="../drawing/drawCloud.js"></script>
-
-
+    <script src ="../drawing/drawCloud.js"></script>
+    <script src="../drawing/drawMainCharacter.js"></script>
 </body>
-
 </html>
