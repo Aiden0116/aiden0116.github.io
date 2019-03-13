@@ -153,6 +153,9 @@ function drawMarioBody2() {
     ctx.fillRect(10 * UNIT, 4 * UNIT, UNIT, UNIT);
     ctx.fillRect(9 * UNIT, 2 * UNIT, UNIT, 2 * UNIT);
     ctx.fillRect(6 * UNIT, 4 * UNIT, UNIT, UNIT);
+
+    ctx.fillStyle="orange";
+    ctx.fillRect(7*UNIT,9*UNIT,UNIT,UNIT);
 }
 
 function drawMarioHead3() {
@@ -215,6 +218,9 @@ function drawMarioBody3() {
 
     ctx.fillStyle = "#FCE6B1";
     ctx.fillRect(5 * UNIT, 9 * UNIT, UNIT, UNIT);
+
+    ctx.fillStyle="orange";
+    ctx.fillRect(5*UNIT,9*UNIT,UNIT,UNIT);
 
 
 
