@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Back</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Back</a>
+        <br>
+        <a href="slide.html">Slide</a>
+        <br>
+        <a href="animation.html">Animation</a>
+    </nav>
+    <section>
+        <canvas id="myCanvas" width="1000" height="700"></canvas>
+    </section>
+    <footer>
+        <p>&copy;2019</p>
+    </footer>
+    <script>
+        var canvas;
+        var ctx;
+        var requestId;
+        var isFacingRight = true;
+        var positionX = 0;
+        var positionCloudX = 0;
+        var time = 0;
+        const MAX_TIME = 20
+        const UNIT = 7;
+        window.onload = init;
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            startAnimation();
+        }
+        function startAnimation() {
+            requestId = requestAnimationFrame(animationLoop);
+        }
+        function animationLoop(timeStamp) {
+            // First line inside animation
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBackground();
+            animateMario();
+            changePositionX();
+            changePositionCloudX();
+            changeTime();
+            animateCloud();
+            requestId = requestAnimationFrame(animationLoop);
+        }
+
+        function drawBackground() {
+            ctx.fillStyle = "skyblue";
+            drawWoodBlocks(0, 84, 19, 1);
+
+        }
+        function animateCloud() {
+            drawCloud(positionCloudX, 10);
+        }
+        function animateMario() {
+            if (0 <= time && time <= 9) {
+                drawMario2(positionX, 68);
+            } else if (10 <= time && time <= 19) {
+                drawMario3(positionX, 68);
+            }
+        }
+        function changePositionX() {
+            if (positionX >= canvas.width / UNIT) {
+                positionX = -12;
+            } else {
+                positionX += 1;
+            }
+
+        }
+        function changeTime() {
+            if (time == MAX_TIME) {
+                time = 0;
+            } else {
+                time += 1;
+            }
+
+        }
+        function changePositionCloudX() {
+            if (positionCloudX >= canvas.width / UNIT) {
+                positionCloudX = -4;
+            } else {
+                positionCloudX += 0.2;
+            }
+        }
+    </script>
+    <script src="../drawing/drawWoodBlock.js"></script>
+    <script src="../drawing/drawCloud.js"></script>
+    <script src="../drawing/drawMainCharacter.js"></script>
+
+</body>
+
+</html>

@@ -15,6 +15,8 @@
         <br>
     
         <a href="slide.html">Slide</a>
+        <br>
+        <a href="walk.html">walk</a>
     </nav>
     <section>
         <canvas id="myCanvas" width="1000" height="700"></canvas>
@@ -33,7 +35,6 @@
             canvas = document.getElementById("myCanvas");
             ctx = canvas.getContext("2d");
             startAnimation();
-
         }
         function startAnimation() {
             requestId = requestAnimationFrame(animationLoop);
