@@ -92,3 +92,8 @@ img:hover {
       height: 20px;
       size: 5%;
   }
+  
+  section {
+      margin-left: 20% ;
+      margin-right: 20% ;
+  }
