@@ -22,13 +22,14 @@
     <footer>
         <p>&copy;2019</p>
     </footer>
-    <script>
+    <script> 
         var canvas;
         var ctx;
         var requestId;
         var isFacingRight = true;
         var positionX = 0;
         var positionCloudX = 0;
+        var positionSansX = 140;
         var time = 0;
         const MAX_TIME = 20
         const UNIT = 7;
@@ -50,6 +51,8 @@
             changePositionCloudX();
             changeTime();
             animateCloud();
+            changePositionSansX();
+            animateSans();
             requestId = requestAnimationFrame(animationLoop);
         }
 
@@ -61,10 +64,13 @@
         function animateCloud() {
             drawCloud(positionCloudX, 10);
         }
+        function animateSans(){
+             drawSans(positionSansX, 54);
+        }
         function animateMario() {
             if (0 <= time && time <= 9) {
                 drawMario2(positionX, 68);
-            } else if (10 <= time && time <= 19) {
+            } else if (10 <= time && time <= 20) {
                 drawMario3(positionX, 68);
             }
         }
@@ -86,15 +92,23 @@
         }
         function changePositionCloudX() {
             if (positionCloudX >= canvas.width / UNIT) {
-                positionCloudX = -4;
+                positionCloudX = -10;
             } else {
                 positionCloudX += 0.2;
+            }
+        }
+        function changePositionSansX() {
+            if (positionSansX <= -25) {
+                positionSansX = 160;
+            } else {
+                positionSansX -= 1;
             }
         }
     </script>
     <script src="../drawing/drawWoodBlock.js"></script>
     <script src="../drawing/drawCloud.js"></script>
     <script src="../drawing/drawMainCharacter.js"></script>
+    <script src="../drawing/drawSans.js"></script>
 
 </body>
 

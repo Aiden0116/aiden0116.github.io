@@ -1,7 +1,6 @@
-function drawSans(x,y,scale) {
+function drawSans(x,y) {
     ctx.save();
     ctx.translate(x*UNIT,y*UNIT);
-    ctx.scale(scale,scale);
     drawHead();
     drawSansbody();
     // drawCoat();
