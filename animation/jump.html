@@ -80,10 +80,10 @@
         }
         function changePositionY(){
             if ((JUMP_LOCATION <= positionX) &&(positionX < PEAK_LOCATION)){
-                positionY -=1;
+                positionY /=1.075;
                 isJumping = true;
             } else if ((PEAK_LOCATION <= positionX) &&(positionX < LAND_LOCATION)){
-                positionY +=1
+                positionY *=1.075;
                 isJumping = true;
             } else {
                 isJumping= false

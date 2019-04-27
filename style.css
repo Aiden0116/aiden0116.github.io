@@ -93,7 +93,8 @@ img:hover {
       size: 5%;
   }
   
-  section {
+  .writing {
       margin-left: 20% ;
       margin-right: 20% ;
+      padding: 10%
   }
