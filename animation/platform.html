@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Back</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Back</a>
+        <br>
+        <a href="slide.html">Slide</a>
+        <br>
+        <a href="animation.html">Animation</a>
+    </nav>
+    <section>
+        <canvas id="myCanvas" width="1000" height="700"></canvas>
+    </section>
+    <footer>
+        <p>&copy;2019</p>
+    </footer>
+    <script>
+        var canvas;
+        var ctx;
+        var requestId;
+        var positionX = 0;
+        var positionY = 68;
+        var time = 0;
+        var isFacingRight;
+        const ACCELERATION = 1.036;
+        const JUMP_POSITION = 30;
+        const PEAK_POSITION = 45;
+        const PLATFORM_POSITION = 50;
+        const FALL_POSITION = 92;
+        const LAND_POSITION = 102;
+        // 1
+        const JUMP_POSITION2 = 180;
+        const PEAK_POSITION2 = 60;
+        const FALL_POSITION2 = 60;
+        const LAND_POSITION2 = 230;
+        const MAX_TIME = 30;
+        const UNIT = 7;
+        window.onload = init;
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            startAnimation();
+        }
+        function startAnimation() {
+            requestId = requestAnimationFrame(animationLoop);
+        }
+        function animationLoop(timeStamp) {
+            // First line inside animation
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBackground();
+            changePositionX();
+            changePositionY();
+            changePositionY();
+            drawMario1(positionX, positionY);
+            // animateMario();
+            drawRuler(10)
+
+
+
+
+            requestId = requestAnimationFrame(animationLoop);
+        }
+
+        function drawBackground() {
+            ctx.fillStyle = "magenta";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            drawWoodBlocks(0, 84, 18, 1);
+            drawBlocks(50, 49, 4, 1);
+
+
+        }
+        function changePositionX() {
+            if (positionX <= canvas.width / UNIT) {
+                positionX += 1;
+                if (isFacingRight == false) (
+                    positionX -= 1
+                )
+            } else {
+                positionX = -28;
+                positionX += 1
+            }
+
+        }
+        function changePositionY() {
+            if ((JUMP_POSITION <= positionX) && (positionX < PEAK_POSITION)) {
+                positionY /= ACCELERATION;
+            }
+
+            else if ((PEAK_POSITION <= positionX) && (positionX < PLATFORM_POSITION)) {
+                positionY *= ACCELERATION;
+            } else if (FALL_POSITION <= positionX && positionX < LAND_POSITION) {
+                positionY *= ACCELERATION;
+            } else if ((JUMP_POSITION <= positionX) && (positionX < PEAK_POSITION)) {
+                positionY /= ACCELERATION;
+
+            }
+        }
+
+        function changeIsFacingRight() {
+            if (positionX > canvas.width / UNIT + 4 * UNIT) {
+                isFacingRight = false;
+            } else if (positionX < -4 * UNIT) {
+                isFacingRight = true;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script src="../drawing/drawBlock1.js"></script>
+    <script src="../drawing/drawWoodBlock.js"></script>
+    <script src="../drawing/drawMainCharacter.js"></script>
+    <script src="../drawing/ruler.js"></script>
+
+
+
+
+</body>
+
+</html>

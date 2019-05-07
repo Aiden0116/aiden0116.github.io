@@ -29,6 +29,8 @@
         var positionX = 0;
         var positionY = 68;
         var isJumping
+        // var time = 0;
+        // const MAX_TIME = 20
         const JUMP_LOCATION=30;
         const PEAK_LOCATION=55;
         const LAND_LOCATION=80;
@@ -50,6 +52,7 @@
             changePositionX();
             changePositionY();
             animateMario();
+            // changeTime();
             
   
             requestId = requestAnimationFrame(animationLoop);
@@ -64,13 +67,28 @@
             
 
         }
+        function changeTime() {
+            if (time == MAX_TIME) {
+                time = 0;
+            } else {
+                time += 1;
+            }
+
+        }
         function animateMario() {
             if (isJumping == true){
                 drawMario3(positionX,positionY)
             }else {
                 drawMario1(positionX,positionY);
             }
+        //     if (isJumping=false== 0 <= time && time <= 9) {
+        //         drawMario2(positionX, 68);
+        //     } else if (10 <= time && time <= 20) {
+        //         drawMario3(positionX, 68);
+        //     }
         }
+        
+        
         function changePositionX() {
             if (positionX > canvas.width / UNIT) {
                 positionX = -25;
@@ -80,10 +98,10 @@
         }
         function changePositionY(){
             if ((JUMP_LOCATION <= positionX) &&(positionX < PEAK_LOCATION)){
-                positionY /=1.078;
+                positionY /=1.08;
                 isJumping = true;
             } else if ((PEAK_LOCATION <= positionX) &&(positionX < LAND_LOCATION)){
-                positionY *=1.078;
+                positionY *=1.08;
                 isJumping = true;
             } else {
                 isJumping= false
