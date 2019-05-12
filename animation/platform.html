@@ -28,20 +28,19 @@
         var requestId;
         var positionX = 0;
         var positionY = 68;
+        var positionCloudX=0;
+
         var time = 0;
         var isFacingRight;
-        const ACCELERATION = 1.036;
-        const JUMP_POSITION = 30;
-        const PEAK_POSITION = 45;
-        const PLATFORM_POSITION = 50;
-        const FALL_POSITION = 93;
-        const LAND_POSITION = 102;
+        const ACCELERATION = 1.072;
+        const JUMP_POSITION = 20;
+        const PEAK_POSITION = 40;
+        const LAND_POSITION = 50;
         // 1
-        const JUMP_POSITION2 = 180;
-        const PEAK_POSITION2 = 60;
-        const FALL_POSITION2 = 60;
-        const LAND_POSITION2 = 230;
-        const MAX_TIME = 30;
+        const JUMP_POSITION2 = 90;
+        const PEAK_POSITION2 = 105;
+        const LAND_POSITION2 = 130;
+       
         const UNIT = 7;
         window.onload = init;
         function init() {
@@ -58,10 +57,12 @@
             drawBackground();
             changePositionX();
             changePositionY();
-            changePositionY();
+            changePositionCloudX();
+            animateCloud();
+
             drawMario1(positionX, positionY);
             // animateMario();
-            drawRuler(10)
+            // drawRuler(10)
 
 
 
@@ -73,7 +74,7 @@
             ctx.fillStyle = "magenta";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             drawWoodBlocks(0, 84, 18, 1);
-            drawBlocks(50, 49, 4, 1);
+            drawBlocks(50, 50, 4, 1);
 
 
         }
@@ -92,23 +93,22 @@
         function changePositionY() {
             if ((JUMP_POSITION <= positionX) && (positionX < PEAK_POSITION)) {
                 positionY /= ACCELERATION;
-            }
-
-            else if ((PEAK_POSITION <= positionX) && (positionX < PLATFORM_POSITION)) {
+            } else if ((PEAK_POSITION <= positionX) && (positionX < LAND_POSITION)) {
                 positionY *= ACCELERATION;
-            } else if (FALL_POSITION <= positionX && positionX < LAND_POSITION) {
-                positionY *= ACCELERATION;
-            } else if ((JUMP_POSITION <= positionX) && (positionX < PEAK_POSITION)) {
+            } else if ((JUMP_POSITION2 <= positionX) && (positionX < PEAK_POSITION2)) {
                 positionY /= ACCELERATION;
-
+            }else if ((PEAK_POSITION2 <= positionX) && (positionX < LAND_POSITION2)) {
+                positionY *= ACCELERATION;
             }
         }
-
-        function changeIsFacingRight() {
-            if (positionX > canvas.width / UNIT + 4 * UNIT) {
-                isFacingRight = false;
-            } else if (positionX < -4 * UNIT) {
-                isFacingRight = true;
+        function animateCloud() {
+            drawCloud(positionCloudX, 10);
+        }
+        function changePositionCloudX() {
+            if (positionCloudX >= canvas.width / UNIT) {
+                positionCloudX = -12;
+            } else {
+                positionCloudX += 0.2;
             }
         }
 
@@ -127,6 +127,7 @@
     <script src="../drawing/drawWoodBlock.js"></script>
     <script src="../drawing/drawMainCharacter.js"></script>
     <script src="../drawing/ruler.js"></script>
+    <script src="../drawing/drawCloud.js"></script>
 
 
 
