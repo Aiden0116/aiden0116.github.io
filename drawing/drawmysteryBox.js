@@ -1,7 +1,10 @@
-function drawmysteryBox (){
+function drawMysteryBox (x,y){
+    ctx.save();
+   ctx.translate(x * UNIT, y * UNIT);
     drawOutline();
     drawyellow();
     drawBrown();
+    ctx.restore();
 }
 
 function drawOutline(){

@@ -1,3 +1,18 @@
+function drawMario(x,y,frame){
+ctx.save();
+ctx.translate(x*UNIT,y*UNIT);
+if (frame == 1)
+{
+    drawMarioHead1;
+    drawMarioBody1;
+}else if (frame == 2){
+    drawMarioHead2;
+    drawMarioBody2
+}else if (frame == 3){
+    drawMarioHead3;
+    drawMarioBody3;2
+}
+}
 function drawMario1(x,y,scale) {
     ctx.save();
     ctx.translate(x * UNIT, y * UNIT);

@@ -34,7 +34,9 @@ a:link,
 a:visited {
 text-decoration: none;
 color: black;
-
+border-color: black;
+    border-width: 5px;
+    text-decoration: none;
 }
 a:hover {
     background-color: powderblue;

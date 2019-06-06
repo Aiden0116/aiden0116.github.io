@@ -1,0 +1,23 @@
+body {
+    background-color: gray;
+    text-align: center;
+}
+a:hover {
+    background-color: powderblue;
+}
+h1 {
+    margin-left:40% ;
+    margin-right: 40% ;
+    padding: 5%
+
+}
+a:link,
+a:visited {
+text-decoration: none;
+color: black;
+
+}
+.sale{
+    color: orangered;
+    font-size: 43px
+}

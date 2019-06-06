@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Back</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Back</a>
+        <br>
+        <a href="slide.html">Slide</a>
+        <br>
+        <a href="animation.html">Animation</a>
+    </nav>
+    <section>
+        <canvas id="myCanvas" width="1000" height="700"></canvas>
+    </section>
+    <footer>
+        <p>&copy;2019</p>
+    </footer>
+    <script> 
+        var canvas;
+        var ctx;
+        var requestId;
+        var positionCloudX;
+        var positionX = 0;
+        var time = 0;
+        var positionY=68;
+        var isJumping;
+        const JUMP_LOCATION=50;
+        const PEAK_LOCATION=60;
+        const LAND_LOCATION=70;
+        const MAX_TIME = 20
+        const UNIT = 7;
+        window.onload = init;
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            startAnimation();
+        }
+        function startAnimation() {
+            requestId = requestAnimationFrame(animationLoop);
+        }
+        function animationLoop(timeStamp) {
+            // First line inside animation
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBackground();  
+            changePositionX();
+            changePositionY();
+            animateMysteryBox()
+            animateCoin();
+            animateMario();
+            changeTime();
+            // animateCloud();
+            // drawRuler(5);
+     
+            requestId = requestAnimationFrame(animationLoop);
+        }
+
+        function drawBackground() {
+            ctx.fillStyle = "skyblue";
+            drawWoodBlocks(0, 84, 19, 1);
+
+        }
+        function animateMario(){
+            if (isJumping == true) {
+                drawMario(positionX,positionY,3)
+            } else {
+                if (0 <= time && time < MAX_TIME/2) {
+                    drawMario(positionX,68,2)
+                } else if (MAX_TIME/2 <= time && time <= MAX_TIME) {
+                    drawMario(positionX,68,3)
+                }
+            }
+        }
+        function animateCloud() {
+            drawCloud(positionCloudX, 10);
+        }
+
+        function changePositionX() {
+            if (positionX >= canvas.width / UNIT) {
+                positionX = -15;
+            } else {
+                positionX += 1;
+            }
+
+        }
+        function changeTime() {
+            if (time == MAX_TIME) {
+                time = 0;
+            } else {
+                time += 1;
+            }
+
+        }
+        function changePositionY(){
+        
+            if ((JUMP_LOCATION <= positionX) &&(positionX < PEAK_LOCATION)){
+                positionY /=1.049;
+                isJumping = true;
+            } else if ((PEAK_LOCATION <= positionX) &&(positionX < LAND_LOCATION)){
+                positionY *=1.049;
+                isJumping = true;
+            } else {
+                isJumping= false
+            }
+
+        
+        }
+
+        function animateCoin() {
+            if ((positionX > 56)&&(positionX<65)){
+                drawCoin(63,15)
+            } else if (positionX > 65){
+                // draw empty coin
+            }
+            
+        }
+    
+        function animateMysteryBox(){
+            if (positionX > 56) {
+                // Draw the empty mysterybox
+            } else {
+                drawMysteryBox(60,27)
+            }
+            
+        }
+        function changePositionCloudX() {
+            if (positionCloudX >= canvas.width / UNIT) {
+                positionCloudX = -10;
+            } else {
+                positionCloudX += 0.2;
+            }
+        }
+
+    </script>
+    <script src="../drawing/drawWoodBlock.js"></script>
+    <script src="../drawing/drawCloud.js"></script>
+    <script src="../drawing/drawMario.js"></script>
+   <script src="../ruler.js"></script>
+   <script src="../drawing/drawmysteryBox.js"></script>
+   <script src="../drawing/drawCoin.js"></script>
+   
+
+</body>
+
+</html>

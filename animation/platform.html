@@ -29,8 +29,8 @@
         var positionX = 0;
         var positionY = 68;
         var positionCloudX=0;
-
         var time = 0;
+        const MAX_TIME = 20
         var isFacingRight;
         const ACCELERATION = 1.072;
         const JUMP_POSITION = 20;
@@ -59,6 +59,7 @@
             changePositionY();
             changePositionCloudX();
             animateCloud();
+            // animateMario();
 
             drawMario1(positionX, positionY);
             // animateMario();
@@ -68,6 +69,14 @@
 
 
             requestId = requestAnimationFrame(animationLoop);
+        }
+        function changeTime() {
+            if (time == MAX_TIME) {
+                time = 0;
+            } else {
+                time += 1;
+            }
+
         }
 
         function drawBackground() {
@@ -104,6 +113,13 @@
         function animateCloud() {
             drawCloud(positionCloudX, 10);
         }
+        function animateMario(){
+            if (0 <= time && time <= 9) {
+                drawMario(positionX, 68,1);
+            } else if (10 <= time && time <= 20) {
+                drawMario(positionX, 68,2);
+            }
+        }
         function changePositionCloudX() {
             if (positionCloudX >= canvas.width / UNIT) {
                 positionCloudX = -12;
@@ -128,6 +144,8 @@
     <script src="../drawing/drawMainCharacter.js"></script>
     <script src="../drawing/ruler.js"></script>
     <script src="../drawing/drawCloud.js"></script>
+    <script src="../drawing/drawMario.js"></script>
+
 
 
 

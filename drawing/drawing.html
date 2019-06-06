@@ -3,7 +3,17 @@
 
 <head>
     <link rel="stylesheet" href="../style.css">
-    
+    <script>
+        var canvas;
+        var ctx;
+        const UNIT = 10;
+        window.onload = init;
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            drawMario(0,0,2);
+        }
+    </script>
 </head>
 
 <body>
@@ -44,7 +54,7 @@
 
    </footer>
    <script src=""></script>
-   <script src=""></script>
+   <script src="drawMario.js"></script>
    <script src="drawing.js"></script>
    <script src="ruler.js"></script>
 </body>
