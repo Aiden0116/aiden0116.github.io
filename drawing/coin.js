@@ -52,7 +52,7 @@ function drawCoin(x, y, scale) {
     ctx.fillRect(4 * UNIT, 3 * UNIT, 1 * UNIT, 1 * UNIT);
     ctx.fillRect(3 * UNIT, 4 * UNIT, 1 * UNIT, 8 * UNIT);
     ctx.fillRect(5 * UNIT, 4 * UNIT, 1 * UNIT, 6 * UNIT);
-
+    ctx.restore();
 }
 
 

@@ -1,7 +1,7 @@
-function drawMysteryBox(x, y, scale) {
+function drawMysteryBox(x, y) {
     ctx.save();
     ctx.translate(x * UNIT, y * UNIT);
-    ctx.scale(scale, scale);
+    // ctx.scale(scale, scale);
     ctx.fillStyle = "black";
     ctx.fillRect(17 * UNIT, 17 * UNIT, 1 * UNIT, 1 * UNIT);
     ctx.fillRect(18 * UNIT, 2 * UNIT, 1 * UNIT, 15 * UNIT);
@@ -70,7 +70,6 @@ function drawMysteryBox(x, y, scale) {
     ctx.fillRect(8 * UNIT, 11 * UNIT, 3 * UNIT, 1 * UNIT);
     ctx.fillRect(8 * UNIT, 13 * UNIT, 3 * UNIT, 1 * UNIT);
     ctx.fillRect(8 * UNIT, 14 * UNIT, 3 * UNIT, 1 * UNIT);
-    ctx.restore();
     ctx.fillStyle = "#D57F00";
 
     ctx.fillRect(14 * UNIT, 17 * UNIT, 3 * UNIT, 1 * UNIT);
@@ -88,7 +87,7 @@ function drawMysteryBox(x, y, scale) {
     ctx.fillRect(2 * UNIT, 17 * UNIT, 14 * UNIT, 1 * UNIT);
     ctx.fillRect(2 * UNIT, 17 * UNIT, 14 * UNIT, 1 * UNIT);
 
-
+    ctx.restore();
 
 }
 function drawEmptyBox(x, y, scale) {

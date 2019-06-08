@@ -28,19 +28,20 @@
         var requestId;
         var positionX = 0;
         var positionY = 68;
-        var positionCloudX=0;
+        var positionCloudX = 0;
         var time = 0;
-        const MAX_TIME = 20
-        var isFacingRight;
+        var positionBrickX= 0;
+        var isJumping;
+        const MAX_TIME = 20;
         const ACCELERATION = 1.072;
         const JUMP_POSITION = 20;
         const PEAK_POSITION = 40;
         const LAND_POSITION = 50;
-        // 1
+
         const JUMP_POSITION2 = 90;
         const PEAK_POSITION2 = 105;
         const LAND_POSITION2 = 130;
-       
+
         const UNIT = 7;
         window.onload = init;
         function init() {
@@ -57,12 +58,17 @@
             drawBackground();
             changePositionX();
             changePositionY();
+            changePositionBrickX();
+            changeTime();
+            // drawMario1(positionX, positionY);
             changePositionCloudX();
             animateCloud();
-            // animateMario();
+            animateMario();
+            drawSans(50,60,0.8)
+     
 
-            drawMario1(positionX, positionY);
-            // animateMario();
+
+
             // drawRuler(10)
 
 
@@ -90,34 +96,53 @@
         function changePositionX() {
             if (positionX <= canvas.width / UNIT) {
                 positionX += 1;
-                if (isFacingRight == false) (
-                    positionX -= 1
-                )
+
             } else {
                 positionX = -28;
-                positionX += 1
             }
 
         }
         function changePositionY() {
             if ((JUMP_POSITION <= positionX) && (positionX < PEAK_POSITION)) {
                 positionY /= ACCELERATION;
+                isJumping = true
             } else if ((PEAK_POSITION <= positionX) && (positionX < LAND_POSITION)) {
                 positionY *= ACCELERATION;
+                isJumping = true;
             } else if ((JUMP_POSITION2 <= positionX) && (positionX < PEAK_POSITION2)) {
                 positionY /= ACCELERATION;
-            }else if ((PEAK_POSITION2 <= positionX) && (positionX < LAND_POSITION2)) {
+                isJumping = true;
+            } else if ((PEAK_POSITION2 <= positionX) && (positionX < LAND_POSITION2)) {
                 positionY *= ACCELERATION;
+                isJumping = true;
+  
+            } else {
+                isJumping = false;
+            }
+
+
+
+
+        }
+        function changePositionBrickX() {
+            if (positionBrickX <= -25) {
+                positionBrickX = 160;
+            } else {
+                positionBrickX -= 1;
             }
         }
         function animateCloud() {
             drawCloud(positionCloudX, 10);
         }
-        function animateMario(){
-            if (0 <= time && time <= 9) {
-                drawMario(positionX, 68,1);
-            } else if (10 <= time && time <= 20) {
-                drawMario(positionX, 68,2);
+        function animateMario() {
+            if (isJumping == true) {
+                drawMario(positionX, positionY, 3)
+            } else {
+                if (0 <= time && time < MAX_TIME / 2) {
+                    drawMario(positionX, positionY, 2)
+                } else if (MAX_TIME / 2 <= time && time <= MAX_TIME) {
+                    drawMario(positionX, positionY, 3)
+                }
             }
         }
         function changePositionCloudX() {
@@ -145,6 +170,7 @@
     <script src="../drawing/ruler.js"></script>
     <script src="../drawing/drawCloud.js"></script>
     <script src="../drawing/drawMario.js"></script>
+    <script src="../drawing/drawSans.js"></script>
 
 
 

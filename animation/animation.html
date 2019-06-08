@@ -48,21 +48,21 @@
         function animationLoop(timeStamp) {
             // First line inside animation
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            drawMario1(positionX,39);
-            drawWoodBlock(55,55);
-            drawWoodBlock(5,55);
-            drawWoodBlock(0,55);
-            changePositionX();
-            drawWoodBlock(32,55);
-            drawWoodBlock(48,55);
-            drawWoodBlock(64,55);
-            drawWoodBlock(80,55);
-            drawWoodBlock(90,55);
-            drawWoodBlock(20,55);
-            ctx.save();
-           ctx.scale(5,5);
-           drawCloud();
-           ctx.restore();
+            // drawMario1(positionX,39);
+            // drawWoodBlock(55,55);
+            // drawWoodBlock(5,55);
+            // drawWoodBlock(0,55);
+            // changePositionX();
+            // drawWoodBlock(32,55);
+            // drawWoodBlock(48,55);
+            // drawWoodBlock(64,55);
+            // drawWoodBlock(80,55);
+            // drawWoodBlock(90,55);
+            // drawWoodBlock(20,55);
+        //     ctx.save();
+        //    ctx.scale(5,5);
+        // //    drawCloud();
+        //    ctx.restore();
             // Last line inside animation loop
             requestId = requestAnimationFrame(animationLoop);
         }
