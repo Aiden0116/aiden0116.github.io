@@ -7,20 +7,17 @@ function drawBricks (x,y, numBricks){
         //  in the fourth loop.i = 3.
         //  in the fifth loop, i = 4.
         ctx.save();
-        ctx.translate(i*10*UNIT+x*UNIT,y*UNIT);
+        ctx.translate(i*50*UNIT+x*UNIT,y*UNIT);
         drawBrick();
-        ctx.restore();
-         ctx.save();
-        ctx.translate(i*10*UNIT+x*UNIT,y*UNIT);
         ctx.restore();
     }
 }
 
 function drawBrick(){
     ctx.fillStyle = "#5BB348";
-    ctx.fillRect(0,0,10*UNIT,10*UNIT);
+    ctx.fillRect(0,0,50*UNIT,10*UNIT);
     ctx.fillStyle = "#8C6542";
-    ctx.fillRect(0,7*UNIT,10*UNIT,40*UNIT);
+    ctx.fillRect(0,7*UNIT,50*UNIT,40*UNIT);
 
 }
     

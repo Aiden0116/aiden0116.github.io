@@ -43,37 +43,37 @@
         const LAND_POSITION2 = 130;
 
         const UNIT = 7;
-        // when the page is loaded, it will run the init functions
+
         window.onload = init;
-        // set of instructions that can be run
+
         function init() {
             canvas = document.getElementById("myCanvas"); 
-            // linking html canvas to js canvas
+
             ctx = canvas.getContext("2d");
-            // setting canvas to 2d
+
             startAnimation();
         }
         function startAnimation() {
             requestId = requestAnimationFrame(animationLoop);
-            // starting the animation by running the animatiion loop function
+
         }
         function animationLoop(timeStamp) {
-            // First line inside animation
+
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            // clears the canvas
+
             drawBackground();
             changePositionX();
             changePositionY();
             changePositionBrickX();
             changeTime();
-            // drawMario1(positionX, positionY);
-            changePositionCloudX();
-            animateCloud();
+
+
+
             animateMario();
             drawSans(50,60,0.8)
-            // drawRuler(10)
+
             requestId = requestAnimationFrame(animationLoop);
-            // repeats animation
+
         }
         function changeTime() {
             if (time == MAX_TIME) {
@@ -93,7 +93,7 @@
 
         }
         function changePositionX() {
-            // will control mario's horizontal location
+
             if (positionX <= canvas.width / UNIT) {
                 positionX += 1;
 
@@ -103,7 +103,7 @@
 
         }
         function changePositionY() {
-            // makes the mario jump
+
             if ((JUMP_POSITION <= positionX) && (positionX < PEAK_POSITION)) {
                 positionY /= ACCELERATION;
                 isJumping = true
@@ -126,11 +126,8 @@
 
         }
        
-        function animateCloud() {
-            drawCloud(positionCloudX, 10);
-        }
         function animateMario() {
-            // draws the mario and will control mario's movement
+
             if (isJumping == true) {
                 drawMario(positionX, positionY, 3)
             } else {
@@ -141,13 +138,7 @@
                 }
             }
         }
-        function changePositionCloudX() {
-            if (positionCloudX >= canvas.width / UNIT) {
-                positionCloudX = -12;
-            } else {
-                positionCloudX += 0.2;
-            }
-        }
+        
 
 
 
