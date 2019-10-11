@@ -97,3 +97,6 @@ canvas {
   .informationpic{
     text-align: right;
   }
+  .swiftTitle {
+      font-size: 50px;
+  }
