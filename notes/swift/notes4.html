@@ -17,15 +17,57 @@
 <br>
 <h2>Empty Strings</h2>
 <p>We can check is string is empty by using this code.</p>
-<img src="emptyex.png"height = 70px>
-<p>Since the box is empty, it should print this,</p>
+<p>let waterBottle = ""<br>
+if waterBottle.isEmpty{<br> print("The Water Bottle is empty")</p>
 <img src="emptyresult.png" height = 50px>
 <h2>Contcatenation</h2>
 <p>Using concatenation, we can combine 2 strings in to one.</p>
 <img src="fullname.png"height = 70px>
 <br>
-<h2>hasSuffix</h2>
+<h2>Interpolation</h2> 
+<p>Interpolation lets us use variables or constants in a print statement by escaping</p><br>
+<P>print("You clicked\("button2") and the outcome is \(outCome)")</P>
+<br>
+<h2>String Equality and Interpolation</h2>
+<p>This checks if the word is exactly same. This is done by doing this</p>
+<p>if myName == name{<br>
+print("The name are qual")<br>
+}</p><br>
+<p>if myName != name{<br>
+print("The names are not equal")
+}</p>
+<br>
+<p>If the myname is set to AiDen and name is Aiden, it wont be the same thing</p>
+<p>"The names are not equal"</p>
+<br>
+<h2>Ignoring case</h2>
+<p>This ignores if the word is uppercased or lowercased this is done by adding .lowercased on each side</p>
+<p>myname.lowercased == name.lowercased</p>
+<br>
+<h2>Suffix and prefix</h2>
 <p>By usning this, we can use it to tekk if somthing is included in the String or not</p>
+<br>
+<p>print(title.hasSuffix("Choi"))</p>
+<br>
+<p>print(title.hasPrefix("Aiden"))</p>
+<p>Aiden Choi is a Grade 8 student who likes to code, cook, bake, design and create</p>x
+<br>
+<h2>Finding Substrings</h2>
+<p>This checks something contains something</p>
+<p>if myName.contains("Choi"){<br>
+    print(You are a Korean and your last name is Choi)<br>
+}</p>
+<br>
+<h2>Checking Length</h2>
+<p>This checks the length of the input by adding .count</p>
+<br>
+<h2>Defualt Parameter Values</h2>
+<p>This sets the deafault value to zero so when you dont specify the value, it will print out the value you set to defualt</p>
+<p>func addition(firstNum: Int, secNum = Int = 0){
+    let result = firstNum + secNum
+    print("The sum of \(firstNum) and \(secNum) is \(result)")
+}
+addition(firstNum: 20)
 </section>
 </body>
 

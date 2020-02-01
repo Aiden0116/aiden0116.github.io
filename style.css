@@ -5,10 +5,11 @@ p{
 
 
 body {
-    background-color:  #fc8eac;
+    background-color: aquamarine;
 }
 h1 {
     color: black;
+    font-size: 60px;
 }
 
 body {
@@ -52,7 +53,7 @@ a:hover {
     background-color: lightblue;
 }
  img {border-style: solid;
-    border-color:blue;
+    border-color: orchid;
     border-width: 2px;
     margin-top: 20x;
     padding-top: 0px;}
