@@ -77,21 +77,22 @@ h2{
     color: #edf0f1;
 }
 
-.aboutme{
+.aboutmetext{
     padding: 160px ;
 }
 
-.aboutme a{
+.aboutmetext a{
     font-size: 16px;
 }
 
-.aboutme h1, h2{
+.aboutmetext h1, h2{
     padding: 16px 8%;
 }
 
-.aboutme img{
+.aboutmetext img{
     padding-left: 70%;
 }
+
 
 footer {
     color:#edf0f1;
