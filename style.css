@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
+    padding: 20px 2.5%;
 
 }
 
@@ -65,12 +65,41 @@ body {
     background-color: #292a2f;
 }
 
+h1{
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    color: #edf0f1;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+.aboutme{
+    padding: 160px ;
+}
+
+.aboutme a{
+    font-size: 16px;
+}
+
+.aboutme h1, h2{
+    padding: 16px 8%;
+}
+
+.aboutme img{
+    padding-left: 70%;
+}
+
 footer {
     color:#edf0f1;
 }
 
 footer {
     align-items: center;
+    font-family: 'Comfortaa', cursive;
     font-family: 'Comfortaa', cursive;
 
  }
