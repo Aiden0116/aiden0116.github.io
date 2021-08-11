@@ -94,8 +94,8 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 160px;
+    padding-bottom: 160px;
     padding-right: 230px;
     
 
@@ -136,6 +136,7 @@ div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
     padding-left: 40px;
+    padding-bottom: 3%;
   }
   
   div.scrollmenu a {
