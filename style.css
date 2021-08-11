@@ -61,11 +61,15 @@ button:hover {
     background-color: rgba(0,136,168,0.8);
 }
 
+
+
+
 body {
     background-color: #292a2f;
 }
 
 h1{
+    
     font-family: 'Comfortaa', cursive;
     font-size: 60px;
     color: #edf0f1;
@@ -77,20 +81,54 @@ h2{
     color: #edf0f1;
 }
 
-.aboutmetext{
+
+.aboutmeone h1{
+    text-align: center;
+    text-decoration: none;
+}
+
+.aboutmeone{
+    background-color: #292a2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.aboutme1 li{
+    display: inline-block;
+    padding: 0px 200px;
+}
+
+.aboutmeone{
     padding: 160px ;
 }
 
-.aboutmetext a{
-    font-size: 16px;
+sdsd
+.aboutmetwo h2{
+    text-align:center;
+    text-decoration: none;
 }
 
-.aboutmetext h1, h2{
-    padding: 16px 8%;
+.aboutmetwo{
+    background-color: #292a2f;
+    display: flex;
+    justify-content: space-between;
+    
+
 }
 
-.aboutmetext img{
-    padding-left: 70%;
+.aboutme2 li{
+    display: inline-block;
+    padding: 0px 200px;
+}
+
+.aboutme2 h2{
+    text-align: left;
+}
+
+.aboutmetwo{
+    padding: 100px ;
 }
 
 
