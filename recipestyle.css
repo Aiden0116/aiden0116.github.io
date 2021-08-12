@@ -13,14 +13,12 @@ body{
 }
 
 .search-bar{
-    padding-top: 0px;
-    padding-bottom: 600px;
+    padding-top: 4%;
 }
 
 .search-box {
     position: absolute;
     background: #24252A;
-    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     height: 60px;
@@ -64,3 +62,116 @@ body{
     width: 0px;
 
 }
+
+.search-bar h1{
+    padding-top: 50px;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    color: #edf0f1;
+}
+
+h2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+p{
+    color: white;
+}
+
+.popular h2{
+    padding-top: 16px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #edf0f1;
+}
+
+.popular h1{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #edf0f1;
+}
+
+.popular h3{
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    color: #edf0f1;
+}
+
+.popular li{
+    font-family: 'Roboto', sans-serif;
+    color: #cbcecf;
+
+}
+
+
+.popular{
+  padding-bottom: 600px;
+}
+
+.container{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 30px auto;
+    transition: all 0.5s ease 0;
+}
+
+.container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(600px - 30px);
+    background: #202125;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.conatiner .img img{
+    margin-top: 16px;
+}
+
+.container .content h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container .content li{
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+
+.container .buttondesign button {
+    position: relative;
+    background-color: rgba(0,136,168,1);
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all 0.5s ease 0;
+  }
+
+  .container .buttondesign{
+    position: absolute;
+    padding-left: 80px;
+    padding-top: 50px;
+    
+    
+  
+  }
