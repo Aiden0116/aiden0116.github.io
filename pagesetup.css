@@ -7,104 +7,67 @@
 
 }
 
-
-
-body {
-    background-color: #292a2f;
-}
-
-h1{
-    
+.nav li, a, button {
     font-family: 'Comfortaa', cursive;
-    font-size: 60px;
-    color: #edf0f1;
-}
-
-h2{
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #edf0f1;
-}
-
-
-.aboutmesect h1{
     text-align: center;
     text-decoration: none;
-    color: aqua;
 }
 
-.aboutmesect{
-    background-color: #2e2f35;
+header {
+    background-color: #24252A;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 160px;
-    padding-bottom: 160px;
-    padding-right: 230px;
-    
+    padding: 15px 2.5%;
 
 }
 
-.aboutme li{
-    display: inline-block;
-    padding-left: 230px;
-    align-content: center;
+.logo {
+    cursor: pointer;
 }
 
-.aboutmesect a:hover{
+.logo:hover {
     color: #0088a9
 }
 
-.aboutmesect h2{
-    text-decoration: none;
-    padding-top: 30px;
-    text-align: left;
+.nav_links {
+    list-style: none;
 }
-
-.aboutmesect a{
-    padding-right: 5%;
-    padding-top: 70;
-}
-
-
-.featuredvid{
-    font-size: 40px;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 70px;
-}
-
-
-div.scrollmenu {
-    background-color: #292a2f;
-    overflow: auto;
-    white-space: nowrap;
-    padding-left: 40px;
-    padding-bottom: 3%;
-  }
-  
-  div.scrollmenu a {
+ 
+.nav_links li {
     display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
+    padding: 0px 20px;
+}
 
-  div.scrollmenu iframe{
-      padding-left: 25px;
-  }
-  
-  div.scrollmenu a:hover {
-    background-color: #777;
-  }
+.nav_links li a { 
+    transition: all 0.3s ease 0;
+}
+
+.nav_links li a:hover{
+    color: #0088a9
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,168,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+
+button:hover {
+    background-color: rgba(0,136,168,0.8);
+}
 
 
 
 
-/*------------------------------------ */
-/*------------------------------------ */
-  footer{
+
+
+footer{
 
     bottom: 0;
     left: 0;
