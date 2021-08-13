@@ -34,6 +34,7 @@ header {
 
 .nav_links {
     list-style: none;
+    padding-left: 60px;
 }
  
 .nav_links li {
@@ -61,11 +62,6 @@ header {
 .cta button:hover {
     background-color: rgba(0,136,168,0.8);
 }
-
-
-
-
-
 
 footer{
 
