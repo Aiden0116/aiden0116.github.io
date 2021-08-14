@@ -146,6 +146,104 @@ h2{
 
 /*-------------------------------------------------------------------------------- */
 
+.recipe-title{
+    font-size: 40px;
+    background-color: #292a2f;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.recipe-sect h1{
+    text-align: center;
+    text-decoration: none;
+    color: #FA55DA;
+    font-size: 50px;
+    
+}
+
+
+
+.recipe-sect{
+    background-color: #292a2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 280px;
+    padding-left: 80px;
+    padding-right: 200px;
+}
+
+
+/*-------------------------------------------------------------------------------- */
+
+.container{ 
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    margin: 30px 0px;
+    transition: all 0.5s ease 0;
+}
+
+.container .box-ingredients{
+    position: relative;
+    width: calc(500px - 30px);
+    height: calc(450px - 30px);
+    background: #202125;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.container .box-instructions{
+    position: relative;
+    width: calc(900px - 30px);
+    height: calc(450px - 30px);
+    background: #202125;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+
+
+.container .content h3{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    color: #FA55DA;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container .box-ingredients .content li{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: center;
+
+    justify-content: space-evenly;
+}
+
+
+.container .box-instructions .content li{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 100px;
+    justify-content: space-evenly;
+}
+
+/*-------------------------------------------------------------------------------- */
+
 .how-to-vid h1{
     text-align: center;
     text-decoration: none;
@@ -163,7 +261,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 100px;
     
     padding-bottom: 100px;
     padding-left: 350px;
@@ -199,60 +297,3 @@ h2{
 }
 
 /*-------------------------------------------------------------------------------- */
-
-.recipe-title{
-    font-size: 40px;
-    background-color: #292a2f;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.recipe h1{
-    text-align: center;
-    text-decoration: none;
-    color: #FA55DA;
-    font-size: 50px;
-    padding-bottom: 2o;
-}
-
-.recipe h2{
-    padding-left: 0px;
-}
-
-.recipe{
-    background-color: #292a2f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 90px;
-    padding-left: 200px;
-    padding-right: 200px;
-    
-
-}
-
-.recipe .ingredients li{
-    display: inline-block;
-    align-content: center;
-
-}
-
-.recipe .instructions li{
-    display: inline-block;
-    padding-left: 222px;
-    align-content: center;
-
-}
-
-.recipe .ingredients h2{
-    text-decoration: none;
-    text-align: left;
-}
-
-.recipe .instructions h2{
-    text-decoration: none;
-
-    text-align: left;
-}
-
