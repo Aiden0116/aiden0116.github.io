@@ -211,7 +211,8 @@ h2{
     text-align: center;
     text-decoration: none;
     color: #FA55DA;
-
+    font-size: 50px;
+    padding-bottom: 2o;
 }
 
 .recipe h2{
@@ -239,20 +240,19 @@ h2{
 
 .recipe .instructions li{
     display: inline-block;
-    padding-left: 220px;
+    padding-left: 222px;
     align-content: center;
 
 }
 
 .recipe .ingredients h2{
     text-decoration: none;
-    padding-top: 30px;
     text-align: left;
 }
 
 .recipe .instructions h2{
     text-decoration: none;
-    padding-top: 30px;
+
     text-align: left;
 }
 
