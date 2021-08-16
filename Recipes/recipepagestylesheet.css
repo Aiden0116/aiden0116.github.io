@@ -184,11 +184,12 @@ h2{
     height: 200px;
     margin: 30px 0px;
     transition: all 0.5s ease 0;
+    padding-left: 100px;
 }
 
 .container .box-ingredients{
     position: relative;
-    width: calc(500px - 30px);
+    width: calc(450px - 30px);
     height: calc(450px - 30px);
     background: #202125;
     float: left;
@@ -196,11 +197,12 @@ h2{
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 40px;
+
 }
 
 .container .box-instructions{
     position: relative;
-    width: calc(900px - 30px);
+    width: calc(850px - 30px);
     height: calc(450px - 30px);
     background: #202125;
     float: left;
@@ -210,6 +212,9 @@ h2{
     border-radius: 40px;
 }
 
+.container a:hover{
+    color: #0088a9;
+}
 
 
 .container .content h3{
