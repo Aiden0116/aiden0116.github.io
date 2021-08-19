@@ -32,7 +32,7 @@
 
     <nav>
       <ul class="nav_links">
-        <li> <a href="#">Links</a></li>
+        <li> <a href="links.html">Links</a></li>
         <li> <a href="#">Recipes</a></li>
         <li> <a href="#">Videos</a></li>
       </ul>
@@ -43,12 +43,30 @@
 <section class="search-bar">
 
   <div class="search-box">
-    <input class="search-txt" type="text" name="" placeholder="Search">
-    <a class="search-btn" href="#">
+    <input class="search-txt" type="text" name="" id="search" placeholder="Search" onchange="openPage()">
+
+    <a class="search-btn" onchange="openPage()">
       <i class="fas fa-search"></i>
     </a>
-  </div>
+ </div>
 
+ <script src="Recipes/suggestions.js"></script> 
+ <script src="Recipes/script.js"></script> 
+
+ <script>
+  function openPage() {
+      var x = document.getElementById("search").value;
+
+      if (x === "brown sugar bubble tea") {
+          window.open("./Recipes/brown-sugar-bbt-recipe.html");
+      }
+
+      if (x === "blueberry smoothie bubble tea") {
+          window.open("./Recipe/blueberry-bubble-tea.html");
+      }
+
+  }
+</script>
   <h1>Recipes</h1>
 
 </section>
@@ -98,7 +116,7 @@
 <!--------------------------------------------->
     <div class="box">
      <div class="img">
-       <img src="./Website Images/Website Blueberry.png" height="220px">
+      <a href="./Recipes/blueberry-bubble-tea.html"><img src="./Website Images/Website Blueberry.png" height="220px"></a> 
       </div>
     <div class="content">
        <h3>Blueberry Bubble Tea</h3>
@@ -111,7 +129,7 @@
        </ul>
       </div>
       <div class="buttondesign">
-       <a href="#"><button>Recipe</button></a>
+       <a href="./Recipes/blueberry-bubble-tea.html"><button>Recipe</button></a>
       </div>
     </div>
  </div>
@@ -131,8 +149,8 @@
 
 
 
-
-
+<!-------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
 <footer>
   <div class="footer-content">
       <h3>Frutta Boba</h3>
@@ -140,6 +158,7 @@
       <ul class="socials">
           <li><a href="https://www.instagram.com/aiden_choi_0116/"><i class="fa fa-instagram"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UCgVFFeNCN1DOIyuiKVESn7g"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://paypal.me/aidenchoi0116?locale.x=en_US"><i class="fa fa-paypal"></i></a></li>
 
       </ul>
   </div>

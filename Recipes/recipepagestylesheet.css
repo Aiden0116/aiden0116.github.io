@@ -93,7 +93,7 @@ h2{
 /*-------------------------------------------------------------------------------- */
 
 .recipe-intro h1{
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: aqua;
     font-size: 52px;
@@ -254,7 +254,7 @@ h2{
     text-decoration: none;
     color: rgba(0,136,168,0.8);
     font-size: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .how-to-vid h2{
@@ -266,7 +266,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 80px;
     
     padding-bottom: 100px;
     padding-left: 350px;
