@@ -84,14 +84,14 @@ p{
     color: white;
 }
 
-.popular h2{
+.container h2{
     padding-top: 16px;
     text-align: center;
     font-family: 'Comfortaa', cursive;
     color: #edf0f1;
 }
 
-.popular h1{
+.container h1{
     text-align: center;
     font-family: 'Comfortaa', cursive;
     color: #edf0f1;
@@ -103,7 +103,7 @@ p{
     color: #edf0f1;
 }
 
-.popular li{
+.container li{
     font-family: 'Roboto', sans-serif;
     color: #cbcecf;
 
@@ -111,7 +111,11 @@ p{
 
 
 .popular{
-  padding-bottom: 600px;
+  padding-bottom: 350px;
+}
+
+.popular h2{
+    text-align: center;
 }
 
 .container{
@@ -139,13 +143,13 @@ p{
     margin-top: 16px;
 }
 
-.container .content h3{
+.container  h3{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-.container .content li{
+.container  li{
     font-size: 14px;
     padding-top: 10px;
     text-align: center;
@@ -172,15 +176,48 @@ p{
     position: absolute;
     padding-left: 80px;
     padding-top: 50px;
-    
-    
-  
   }
 
+  .container button:hover {
+    background-color: rgba(0,136,168,0.8);
+}
 
 
 
+.drinks h1{
+    font-size: 20px;
+    padding-left: 6%;
+}
+
+.drinks h3{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #edf0f1;
+}
 
 
+.drinks .container{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 30px auto;
+    transition: all 0.5s ease 0;
+}
+
+.drinks .container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #202125;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 30px;
+    
+}
 
   
