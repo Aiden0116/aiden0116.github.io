@@ -1,0 +1,22 @@
+h1 {
+    padding-top: 120px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    color: #edf0f1;
+    
+}
+body {
+    background-color: #292a2f;
+}
+.logos a{
+    text-align: centery;
+}
+p {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: #edf0f1;
+}
+
