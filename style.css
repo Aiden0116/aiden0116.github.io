@@ -31,6 +31,8 @@ h2{
     color: aqua;
 }
 
+
+
 .aboutmesect{
     background-color: #2e2f35;
     display: flex;
@@ -38,14 +40,14 @@ h2{
     align-items: center;
     padding-top: 160px;
     padding-bottom: 160px;
-    padding-right: 230px;
+    padding-right: 180px;
     
 
 }
 
 .aboutme li{
     display: inline-block;
-    padding-left: 230px;
+    padding-left: 220px;
     align-content: center;
 }
 
@@ -65,10 +67,12 @@ h2{
 }
 
 
+
+
 .featuredvid{
     font-size: 40px;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 70px;
 }
 
@@ -78,7 +82,7 @@ div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
     padding-left: 35px;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   }
   
   div.scrollmenu a {
@@ -91,14 +95,56 @@ div.scrollmenu {
 
   div.scrollmenu iframe{
       padding-left: 25px;
-      border-radius: 40px;
+      border-radius: 50px;
   }
   
   div.scrollmenu a:hover {
     background-color: #777;
   }
 
+  .scrollMore {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #edf0f165;
+    padding-bottom: 4%;
+  }
 
+
+  .featuredpic{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+
+
+  div.scrollmenupictures {
+    background-color: #323336;
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 35px;
+    padding-bottom: 4%;
+  }
+  
+  div.scrollmenupictures a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  div.scrollmenupictures iframe{
+      padding-left: 25px;
+      border-radius: 50px;
+  }
+  
+  div.scrollmenupictures a:hover {
+    background-color: #2e2f35;
+  }
+
+  
 
 
 /*------------------------------------ */

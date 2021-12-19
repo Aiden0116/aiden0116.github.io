@@ -30,6 +30,7 @@ header {
 
 .logo {
     cursor: pointer;
+    margin-top: 50;
 }
 
 .logo:hover {
