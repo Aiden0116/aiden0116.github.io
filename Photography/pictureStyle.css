@@ -10,28 +10,23 @@ h1 {
     font-family: cocogoosePro;
     font-size: 30px;
     color: white;
+    padding-right: 100px;
+    text-align: center;
 }
 
 .photosect{
-    background-color: #2e2f35;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 160px;
-    padding-left: 18.5%;
-    padding-bottom: 160px;
-}
-
-.photosect img {
-    padding-left: 60px;
-    padding-right: 120px;
-    border-radius: 40px;
-    text-align: center;
+    padding-top: 4%;
+    padding-left: 15%;
+    padding-right: 18.5%;
+    padding-bottom: 1%;
 }
 
 .photos p{
     padding-top: 5px;
-    padding-bottom: 40px;
     font-size: 12px;
     font-family: 'Comfortaa', cursive;
     color: #ffffff9b;
@@ -50,57 +45,32 @@ h1 {
 .photosect h2{
     text-decoration: none;
     padding-top: 30px;
-    text-align: left;
+}
+
+.bigImage{
+    
+    display: block;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+
 }
 
 .container .box{
     width: calc(380px - 30px);
     height: calc(135px - 30px);
-    background: #202125;
+    background: #2021259a;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 30px;
-    padding-bottom: 80px;
+    margin: auto;
+    width: 20%;
+    text-align: center;
 }
 
 .container li{
     color: rgba(255, 255, 255, 0.623);
     font-family: 'Comfortaa', cursive;
     padding-top: 10px;
-    padding-left: 50px;
-}
-
-.button {
-    background-color: #4EA86D; 
-    border: none;
-    color: white;
-    padding: 18px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 40px;
-    margin-left: 10px;
-  }
-
-.button2 {
-    background-color: #5673E6; 
-    border: none;
-    color: white;
-    padding: 18px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 40px;
-    margin-left: 20px;
-  }
-
-.bigImage{
-    padding-top: 5%;
-    display: block;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5%;
 }
