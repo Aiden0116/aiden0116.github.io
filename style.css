@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+
 
 * {
     box-sizing: border-box;
@@ -6,24 +10,53 @@
     padding: 0;
 
 }
-
 body {
     background-color: #292a2f;
 }
-
 h1{
     
-    font-family: 'Comfortaa', cursive;
-    font-size: 60px;
-    color: #edf0f1;
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+  color: #edf0f1;
 }
-
 h2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #edf0f1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #edf0f1;
 }
 
+/* <!--------------------------------------------------------------------------------------------------------------> */
+.parallax1 {
+  /* The image used */
+  background-image: url("utility/Website Graphics/homepage.jpg");
+
+  /* Set a specific height */
+  min-height: 870px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;    
+}
+
+.parallax1 h1{
+  font-family: cocogooseProBlock;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 16%;
+  text-shadow: 2px 2px 10px black;
+}
+
+.parallax1 h2{
+  font-family: cocogooseProLine;
+  font-size: 42px;
+  text-align: center;
+  padding-top: 2%;
+  text-shadow: 2px 2px 5px black;
+  color: #ffffffc4;
+}
+/* <!--------------------------------------------------------------------------------------------------------------> */
 
 .aboutmesect h1{
     text-align: center;
@@ -31,15 +64,13 @@ h2{
     color: aqua;
 }
 
-
-
 .aboutmesect{
     background-color: #2e2f35;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 140px;
+    padding-bottom: 140px;
     padding-right: 180px;
     
 
@@ -66,83 +97,36 @@ h2{
     padding-top: 70;
 }
 
+/* <!--------------------------------------------------------------------------------------------------------------> */
 
+.parallax2 {
+  /* The image used */
+  background-image: url("utility/Website Graphics/Videography Section Website.png");
 
-
-.featuredvid{
-    font-size: 40px;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 70px;
+  /* Set a specific height */
+  min-height: 400px;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;    
 }
 
-
-div.scrollmenu {
-    background-color: #292a2f;
-    overflow: auto;
-    white-space: nowrap;
-    padding-left: 35px;
-    padding-bottom: 2%;
-  }
-  
-  div.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-
-  div.scrollmenu iframe{
-      padding-left: 25px;
-      border-radius: 50px;
-  }
-  
-  div.scrollmenu a:hover {
-    background-color: #777;
-  }
-
-  .scrollMore {
-    text-align: center;
-    font-family: 'Comfortaa', cursive;
-    color: #edf0f165;
-    padding-bottom: 4%;
-  }
-
-
-  .featuredpic{
-    font-size: 40px;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 70px;
+.parallax2 h1{
+  font-family: cocogooseProBlock;
+  font-size: 50px;
+  text-align: left;
+  color: #FA55DA;
+  padding-top: 9.5%;
+  padding-left: 10%;
+  text-shadow: 2px 2px 10px black;
 }
 
 
 
-  div.scrollmenupictures {
-    background-color: #323336;
-    overflow: auto;
-    white-space: nowrap;
-    padding-left: 35px;
-    padding-bottom: 4%;
-  }
-  
-  div.scrollmenupictures a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
 
-  div.scrollmenupictures iframe{
-      padding-left: 25px;
-      border-radius: 50px;
-  }
-  
-  div.scrollmenupictures a:hover {
-    background-color: #2e2f35;
-  }
+
 
   
 
