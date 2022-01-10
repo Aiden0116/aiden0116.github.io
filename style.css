@@ -2,6 +2,8 @@
 @font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
 @font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
 @font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+
 
 
 * {
@@ -134,10 +136,63 @@ h2{
   color: white;
   padding-top: 18%;
  }
-  
+/*------------------------------------ */
+.divider{
+  font-size: 20px;
+  font-family: cocogooseProLine;
+  text-align:  center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*------------------------------------ */
+.parallax3 {
+  /* The image used */
+  background-image: url("Photo/streetMotorcycle.jpg");
 
+  /* Set a specific height */
+  min-height: 400px;
   
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;    
+}
 
+.parallax3 h1{
+  font-family: cocogooseProReg;
+  font-size: 60px;
+  color: rgb(143, 183, 246);
+  padding-top: 6%;
+  padding-bottom: 2%;
+  text-align: center;
+  text-shadow: 2px 2px 15px black;
+}
+
+.parallax3 button {
+  position: relative;
+  background-color: rgba(0,136,168,1);
+  border: none;
+  color: white;
+  padding-right: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: all 0.5s ease 0;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.parallax3 .buttondesign{
+  display: flex;
+  justify-content: center;
+}
+.parallax3 button:hover {
+  background-color: rgb(1, 104, 128);
+}
 
 /*------------------------------------ */
 /*------------------------------------ */
