@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
 
 ::-webkit-scrollbar{
     display: none;
@@ -9,6 +13,10 @@
     margin: 0;
     padding: 0;
 
+}
+
+body {
+    background-color: #292a2f;
 }
 
 .nav li, a, button {
@@ -148,4 +156,12 @@ footer{
 
 .footerName{
     font-size: 20px;
+}
+
+.footP{
+    font-family: 'Comfortaa', cursive;
+}
+
+.copyright{
+    font-family: Arial, Helvetica, sans-serif;
 }

@@ -22,5 +22,11 @@ p {
 
 a{
     align-content: center;
-    
+
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }

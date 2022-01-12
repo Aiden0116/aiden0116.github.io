@@ -33,7 +33,7 @@ h2{
   background-image: url("utility/Website Graphics/homepage.jpg");
 
   /* Set a specific height */
-  min-height: 870px;
+  min-height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -106,7 +106,7 @@ h2{
   background-image: url("utility/Website Graphics/Videography Section Website.png");
 
   /* Set a specific height */
-  min-height: 400px;
+  min-height:400px;
   
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -128,6 +128,7 @@ h2{
   display: flex;
   padding-top: 5.5%;
   justify-content: space-evenly;
+  list-style: none;
 
  }
  .parallax2 h2{
