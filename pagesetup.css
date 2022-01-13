@@ -158,8 +158,9 @@ footer{
     font-size: 20px;
 }
 
-.footP{
+footer p{
     font-family: 'Comfortaa', cursive;
+    text-align: center;
 }
 
 .copyright{

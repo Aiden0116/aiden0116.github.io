@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+
+h1{
+    color: white;
+    /* padding-left: 20vw; */
+    font-family: cocogooseProReg;
+    padding-top: 10vh;
+}
+
+p{
+    color: white;
+}
+
+h2{
+    color: white;
+    padding-left: 20vw;
+    font-family: cocogooseProReg;
+    padding-top: 5vh;
+}
+
+.this{
+    color: white;
+    padding-left: 20vw;
+    font-family: cocogooseProReg;
+    padding-top: 5vh;
+}
+
+h4{
+    color: white;
+    padding-left: 20vw;
+    font-family: cocogooseProReg;
+    padding-top: 5vh;
+}
+
+.subtitle{
+    color: white;
+    padding-left: 20vw;
+    font-family: cocogooseProLine;
+    font-size: 15px;
+}
+
+.adress{
+    color: white;
+    padding-left: 5vw;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 2vh;
+    font-size: 20px;
+}
+.adresstitle{
+    color: white;
+    padding-left: 5vw;
+    font-family: cocogooseProReg;
+    padding-top: 2vh;
+    font-size: 40px;
+}
+
+ul{
+    list-style: none;
+    background-color: #24252A;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.adressbook{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.boris{
+    padding-left: 25vw;
+}
+
+.author{
+    font-family: 'Comfortaa', cursive;
+    padding-left: 25vw;
+    padding-top: 1vh;
+}
+.time {
+    font-family: 'Comfortaa', cursive;
+    padding-left: 25vw;
+    color: rgba(255, 255, 255, 0.438);
+    padding-top: 5px;
+    padding-bottom: 2vh;
+    font-size: 13px;
+}
+.sub{
+    padding-left: 25vw;
+    padding-top: 5px;
+    font-family: 'Comfortaa', cursive;
+}
+.newstitle{
+    justify-content: center;
+    padding-left: 25vw;
+}
+.sub2{
+    padding-left: 25vw;
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.news{
+    padding-bottom: 50px;
+    border-style: solid;
+    border-color: white;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+}
