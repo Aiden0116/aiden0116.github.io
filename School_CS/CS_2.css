@@ -4,6 +4,10 @@
 @font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
 @font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
 
+.maintext{
+    text-align: center;
+}
+
 h1{
     color: white;
     /* padding-left: 20vw; */
@@ -17,28 +21,25 @@ p{
 
 h2{
     color: white;
-    padding-left: 20vw;
     font-family: cocogooseProReg;
     padding-top: 5vh;
 }
 
 .this{
     color: white;
-    padding-left: 20vw;
     font-family: cocogooseProReg;
     padding-top: 5vh;
 }
 
 h4{
     color: white;
-    padding-left: 20vw;
     font-family: cocogooseProReg;
     padding-top: 5vh;
 }
 
 .subtitle{
     color: white;
-    padding-left: 20vw;
+
     font-family: cocogooseProLine;
     font-size: 15px;
 }
