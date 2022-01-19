@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+
+
+h1{
+    color: white;
+    padding-left: 15vw;
+}
+.title{
+    padding-top: 5vh;
+    font-family: CocogooseProReg;
+}
+
+.Subtitle{
+    font-family: cocogooseProLine ;
+    font-size: 20px;
+    padding-top: 5px;
+    color: rgb(65, 181, 207);
+}
+
+ul{
+    padding-top: 20px;
+    list-style: none;
+}
+li{
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+    padding-bottom: 10px;
+
+}
+
+.example{
+    font-family: cocogooseProLine ;
+    font-size: 20px;
+    padding-top: 5px;
+    color: rgb(207, 65, 176);
+}
+iframe{
+    border-style: none;
+}
+
+.broswertext{
+    color: white;
+    font-family: cocogooseProLine ;
+    padding-top: 5vh;
+}
+
+.browsers{
+    color: white;
+    padding-left: 15vw;
+    list-style: none;
+}
+
+.food{
+    color: white;
+    padding-top: 100px;
+
+    text-align: center;
+    font-family: cocogooseProLine ;
+}
+
+.container{ 
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    margin: 20px 0px;
+    transition: all 0.5s ease 0;
+    padding-left: 100px;
+}
+
+.container .box-ingredients{
+    position: relative;
+    width: calc(450px - 30px);
+    height: calc(450px - 30px);
+    background: #202125;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+
+}
+
+.container .box-instructions{
+    position: relative;
+    width: calc(850px - 30px);
+    height: calc(450px - 30px);
+    background: #202125;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.container a:hover{
+    color: #0088a9;
+}
+
+
+.container .content h3{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    color: #FA55DA;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.container .box-ingredients .content li{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: center;
+
+    justify-content: space-evenly;
+}
+
+
+.container .box-instructions .content li{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 100px;
+    justify-content: space-evenly;
+
+}
+
+.recipe-title{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-family: cocogooseProReg;
+}
+
+.recipe-sect h1{
+    text-align: center;
+    text-decoration: none;
+    color: #FA55DA;
+    font-size: 50px;
+    
+}
+
+.recipe-sect{
+    background-color: #292a2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 200px;
+    padding-left: 80px;
+    padding-right: 200px;
+}
+
+.dog{
+    padding-top: 5vh;
+    font-family: cocogooseProReg;
+    padding-bottom: 2vh;
+}
+.doglist{
+    padding-left: 15vw;
+    color: white;
+    font-size: 20px;
+}
