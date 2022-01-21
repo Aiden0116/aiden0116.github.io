@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+
+.unit{
+    color: white;
+    text-align: center;
+    font-family: cocogooseProReg;
+    padding-top: 5vh;
+}
+p{
+    color: white;
+    text-align: center;
+    font-family: cocogooseProLine;
+}
+
+dl{
+    text-align: center;
+    color: white;
+    padding-top: 3vw;
+    font-family: 'Comfortaa', cursive;
+}
+
+ol{
+    padding-left: 20vw;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* <!--------------------------------------------------------------------------------------------------------------> */
+/* <!---------------------------------------------------Food-------------------------------------------------------> */
+/* <!--------------------------------------------------------------------------------------------------------------> */
+.recipe-intro h1{
+    text-align: left;
+    text-decoration: none;
+    color: aqua;
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-family: cocogooseProReg;
+
+}
+.recipe-intro h2{
+    padding-left: 4px;
+    text-decoration: none;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+.recipe-intro{
+    background-color: #2e2f35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    padding-right: 170px;
+}
+.recipe-intro .content li{
+    display: inline-block;
+    padding-left: 170px;
+    align-content: center;
+}
+.recipe-intro img{
+    border-radius: 40px;
+}
+.recipe-intro a:hover{
+    color: #0088a9
+}
+.recipe-intro a{
+    padding-right: 5%;
+    padding-top: 70;
+}
+/*-------------------------------------------------------------------------------- */
+.recipe-title{
+    font-size: 40px;
+    background-color: #292a2f;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-family: cocogooseProReg;
+}
+.recipe-sect h1{
+    text-align: center;
+    text-decoration: none;
+    color: #FA55DA;
+    font-size: 50px;
+}
+.recipe-sect{
+    background-color: #292a2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 280px;
+    padding-left: 80px;
+    padding-right: 200px;
+}
+/*-------------------------------------------------------------------------------- */
+.container{ 
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    margin: 30px 0px;
+    transition: all 0.5s ease 0;
+    padding-left: 100px;
+}
+.container .box-ingredients{
+    position: relative;
+    width: calc(450px - 30px);
+    height: calc(450px - 30px);
+    background: #202125;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+}
+.container .box-instructions{
+    position: relative;
+    width: calc(850px - 30px);
+    height: calc(450px - 30px);
+    background: #202125;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+}
+.container a:hover{
+    color: #0088a9;
+}
+.container .content h3{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    color: #FA55DA;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.container .box-ingredients .content li{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.container .box-instructions .content li{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 100px;
+    justify-content: space-evenly;
+}
+/*-------------------------------------------------------------------------------- */
+
