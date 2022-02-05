@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+
+
+h1{
+    padding-top: 40px;
+    color: white;
+    font-family: cocogooseProReg;
+    text-align: center;
+}
+
+.list{
+    padding-top: 5vh;
+    padding-left: 25vw;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+table{
+    color: white;
+    padding-left: 25vw;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.names{
+    padding-top: 20px;
+    border-style: groove;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.names th{
+    border-style: groove;
+}
+.names td{
+    border-style: groove;
+}
+
+ul{
+    color: white;
+    text-align: center;
+}
+
+.savings{
+    padding-top: 5px;
+    border-style: groove;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-color: white;
+    border-width: 10px;
+}
+.savings th{
+    border-style: groove;
+}
+.savings td{
+    border-style: groove;
+}
+p{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.user{
+    border-collapse: collapse;
+    padding-top: 5px;
+    border-style: groove;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-color: white;
+    border-width: 10px;
+    color: white;
+    padding-left: 25vw;
+    font-family: 'Comfortaa', cursive;
+}
+
+.dogs{
+    border-collapse: collapse;
+    padding-top: 5px;
+    border-style: groove;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-color: #ff6a6a;
+    border-width: 5px;
+    color: white;
+    padding-left: 25vw;
+    font-family: 'Comfortaa', cursive;
+}
+.dogs th{
+    border-style: groove;
+}
+.dogs td{
+    border-style: groove;
+}
+
+.points{
+    border-collapse: collapse;
+    padding-top: 5px;
+    border-style: groove;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-color: #ffffff;
+    border-width: 5px;
+    color: white;
+    padding-left: 25vw;
+    font-family: 'Comfortaa', cursive;
+}
+.points th{
+    border-style: groove;
+}
+.points td{
+    border-style: groove;
+}
+.pointscontain{
+    padding-top: 3%;
+}
