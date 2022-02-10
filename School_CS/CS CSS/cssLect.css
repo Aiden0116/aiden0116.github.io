@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+/* font-family: 'Comfortaa', cursive; */
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.title{
+    padding-top: 10vh;
+    text-align: center;
+    font-family: cocogooseProReg;
+}
+
+.desc{
+    padding-top: 5vh;
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.ex{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.examples{
+    color: white;
+    font-family: cocogooseProLine;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+}
