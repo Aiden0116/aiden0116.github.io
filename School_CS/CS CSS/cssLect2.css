@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+/* font-family: 'Comfortaa', cursive; */
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+}
+
+.ex1{
+    color: blue;
+    padding-top: 20vh;
+}
+.ex2{
+    color: red;
+}
+.ex3{
+    color:yellow;
+}
+
+.ex4{
+
+    border-style: groove;
+    border-color: white;
+    color: blue;
+}
+.ex5{
+
+    border-style: groove;
+    border-color: red;
+    color: yellow;
+}
+
+.padding1{
+    border-style: groove;
+    border-color: white;
+    padding: 30px;
+    margin: 20px;
+}
+.padding2{
+    border-style: groove;
+    border-color: white;
+    padding: 10px;
+    margin: 20px;
+}
+.padding3{
+    border-style: groove;
+    border-color: white;
+    padding: 50px;
+    margin: 20px;
+}
+
+p{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+
+.p2{
+    color: orange;
+    font-family: arial;
+    font-size: 20;
+    background-color: rgb(255, 219, 152);
+    border-style: groove;
+    border-color: coral;
+    padding: 10px;
+    margin: 30px;
+
+}
+
+.p4{
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10;
+    background-color: rgb(229, 163, 255);
+    border-style: groove;
+    border-color: purple;
+    padding: 20px;
+    margin: 10px;
+
+}
