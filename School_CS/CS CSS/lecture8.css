@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+/* font-family: 'Comfortaa', cursive; */
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+}
+.title{
+    margin-top: 10vh;
+    margin-bottom: 30px;
+}
+
+.newstitle{
+    color: white;
+}
+
+.imagetitle{
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+.samples{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 20px;
+}
+
+.border{
+    border-width: 2;
+    border-style: groove;
+    border-color: white;
+}
+
+
+.subtitle{
+    color: white;
+
+    font-family: cocogooseProLine;
+    font-size: 15px;
+}
+
+.adress{
+    color: white;
+    padding-left: 5vw;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 2vh;
+    font-size: 20px;
+}
+.adresstitle{
+    color: white;
+    padding-left: 5vw;
+    font-family: cocogooseProReg;
+    padding-top: 2vh;
+    font-size: 40px;
+}
+
+ul{
+    list-style: none;
+    background-color: #24252A;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.adressbook{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.author{
+    font-family: 'Comfortaa', cursive;
+    padding-left: 15vw;
+    padding-top: 1vh;
+}
+.time {
+    font-family: 'Comfortaa', cursive;
+    padding-left: 15vw;
+    color: rgba(255, 255, 255, 0.438);
+    padding-top: 5px;
+    padding-bottom: 2vh;
+    font-size: 13px;
+}
+.sub{
+    padding-left: 15vw;
+    padding-top: 5px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+.newstitle{
+    text-align: left;
+    padding-left: 15vw;
+}
+.sub2{
+    padding-left: 15vw;
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.news{
+    padding-bottom: 50px;
+    border-style: solid;
+    border-color: white;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+}
+
+.image{
+    text-align: left;
+    padding-left: 15vw;
+}
+
+.newslinks{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.newslinks li{
+    margin: 0 10px;
+}
+.newslinks a{
+    text-decoration: none;
+    color: #fff;
+}
+.newslinks a{
+    transition: color .4s ease;
+    font-size: 1.1rem;
+}
+.newslinks a i{
+    font-size: 12pixel;
+    color:#a5a5a5;
+
+}
+.newslinks a:hover i{
+    color: rgba(0,136,168,0.8);
+}

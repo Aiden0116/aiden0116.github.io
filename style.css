@@ -43,11 +43,15 @@ h2{
 }
 
 .parallax1 h1{
-  font-family: cocogooseProBlock;
+  font-family: cocogooseProreg;
   font-size: 100px;
   text-align: center;
   padding-top: 16%;
   text-shadow: 2px 2px 10px black;
+}
+
+.sociallink{
+  color: white;
 }
 
 .parallax1 h2{
@@ -198,3 +202,16 @@ h2{
 /*------------------------------------ */
 /*------------------------------------ */
  
+.support{
+  text-align: center;
+  font-family: cocogooseProReg;
+  font-size: 40px;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+
+.supportsub{
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 3vh;
+}

@@ -26,29 +26,49 @@
 
 <body>
 
-  <header class="nav">  
 
-    <a href="index.html"><img class="logo" src="./Website Images/AC Studios Logo White.png" alt="logo" height="55px"></a>
-
-    <nav>
-      <ul class="nav_links">
-        <li> <a href="links.html">Links</a></li>
-        <li> <a href="recipes.html">Recipes</a></li>
-        <li> <a href="videos.html">Videos</a></li>
-        <li> <a href="new_Photography.html">Photography</a></li>
-      </ul>
-    </nav>
-    <a class="cta" href="mailto:aidenchoibbt@gmail.com"><button>Contact</button></a>
-
-</header>
 <!-------------------------------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------------------->
 </nav>
 <section>
   <div class="parallax1">
+
+    <header class="nav">  
+      <ul class="branding">
+        <li>
+          <a href="index.html"><img class="logo" src="./Website Images/AC Studios Logo White.png" alt="logo" height="55px"></a>
+        </li>
+        <li>
+              <!-- <a href="index.html">AC Studios</a> -->
+        </li>
+      </ul>
+
+
+      <nav>
+        <ul class="nav_links">
+          <li> <a href="links.html">Links</a></li>
+          <li> <a href="recipes.html">Recipes</a></li>
+          <li> <a href="videos.html">Videos</a></li>
+          <li> <a href="new_Photography.html">Photography</a></li>
+        </ul>
+      </nav>
+  
+      <div class="dropdown">
+        <button class="cta">Menu</button>
+        <div class="dropdown-content">
+          <a href="mailto:aidenchoibbt@gmail.com">contact</a>
+          <a href="#">support</a>
+          <a href="#">links</a>
+        </div>
+      </div>
+  </header>
+  <hr style="height:2px;border-width:0;color:rgba(128, 128, 128, 0.376);background-color:rgba(47, 47, 47, 0.13)">
+
     <h1>Welcome</h1>
-    <h2>Videography / Photography</h2>
+    <h2>Videography / Photography</h2>  
+
   </div>
+
 </section>
 
 <section class="aboutmesect">
@@ -61,9 +81,9 @@
       <li>
         <h2>Welcome to my website, I'm a Digital Creator, I do videography & photography.
         <br>
-        I own a food channel on YouTube called   <a href="youtube.com/FruttaBoba"> "Frutta Boba" </a>
+        I own a food channel on YouTube called   <a class="sociallink" href="youtube.com/FruttaBoba"> "Frutta Boba" </a>
         <br>
-        For more, visit    <a href="links.html">"Links"</a>
+        For more, visit    <a class="sociallink" href="links.html">"Links"</a>
           
 
          </h2>
@@ -102,10 +122,68 @@
         <div class="buttondesign">
           <a href="new_Photography.html"><button>check it out</button></a>
         </div>
-
-        
   </div>
 </section>
+
+<section>
+  <h1 class="support">Support My Work</h1>
+  <h2 class="supportsub">Im a student who loves to create. It's sometimes hard to focus both school and content creating. 
+      <br>               If you guys enjoy my work, please consider donating a small amount. Thank you :)
+
+  </h1>
+
+  <section>
+    <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=CAD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"Support My Work","amount":{"currency_code":"CAD","value":2}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+  </section>
+
+</section>
+
+
 
 
 <!-------------------------------------------------------------------------------------------------------------->
@@ -124,7 +202,7 @@
       </ul>
   </div>
   <div class="footer-bottom">
-      <p>copyright &copy;2021 Frutta Boba <span>ac studios</span></p>
+      <p>copyright &copy;2022 Frutta Boba <span>ac studios</span></p>
   </div>
 </footer>
 
