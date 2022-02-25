@@ -30,7 +30,7 @@ body {
 .nav li, a, button {
     font-family: 'Comfortaa', cursive;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
     text-decoration: none;
 }

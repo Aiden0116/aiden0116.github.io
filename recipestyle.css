@@ -97,7 +97,7 @@ p{
     color: #edf0f1;
 }
 
-.popular h3{
+.recipes h3{
     font-family: 'Comfortaa', cursive;
     font-size: 25px;
     color: #edf0f1;
@@ -110,11 +110,11 @@ p{
 }
 
 
-.popular{
-  padding-bottom: 350px;
+.recipes{
+  padding-bottom: 260px;
 }
 
-.popular h2{
+.recipes h2{
     text-align: center;
 }
 
@@ -183,7 +183,6 @@ p{
 }
 
 
-
 .drinks h1{
     font-size: 20px;
     text-align: center;
@@ -218,6 +217,10 @@ p{
     overflow: hidden;
     border-radius: 30px;
     
+}
+
+.category{
+    text-align: center;
 }
 
   

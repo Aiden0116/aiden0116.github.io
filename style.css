@@ -215,3 +215,24 @@ h2{
   font-size: 15px;
   margin-bottom: 3vh;
 }
+
+.supportbutton {
+  background-color: #2F6EB4;
+  border: none;
+  color: white;
+  padding-right: 40px;
+  text-decoration: none;
+  font-family: cocogooseProReg;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: all 0.5s ease 0;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 45%;
+  margin-top: 1000px;
+
+  
+}
+
+

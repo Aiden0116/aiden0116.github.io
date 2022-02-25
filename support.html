@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<title>AC Studios</title>
+
+<head>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128211840-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="pagesetup.css">
+  <link rel="stylesheet" href="newPhotoCSS.css"> 
+  <script src="https://kit.fontawesome.com/530add8cbd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header class="nav">  
+        <ul class="branding">
+          <li>
+            <a href="index.html"><img class="logo" src="./Website Images/AC Studios Logo White.png" alt="logo" height="55px"></a>
+          </li>
+          <li>
+                <!-- <a href="index.html">AC Studios</a> -->
+          </li>
+        </ul>
+  
+  
+        <nav style="">
+          <ul class="nav_links">
+            <li> <a href="links.html">Links</a></li>
+            <li> <a href="recipes.html">Recipes</a></li>
+            <li> <a href="videos.html">Videos</a></li>
+            <li> <a href="new_Photography.html">Photography</a></li>
+          </ul>
+        </nav>
+    
+        <div class="dropdown">
+          <button class="cta">Menu</button>
+          <div class="dropdown-content">
+            <a href="mailto:aidenchoibbt@gmail.com">contact</a>
+            <a href="support.html">support</a>
+            <a href="aboutMe.html">about me</a>
+          </div>
+        </div>
+    </header>
+
+</nav>
+<!-------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------Elements here--------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
+
+  <section class="donate">
+    <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=CAD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"Support My Work","amount":{"currency_code":"CAD","value":2}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+  </section>
+<!-------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------Elements End---------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
+<br> <br> <br> <br> <br><br> <br> <br> <br> <br><br>
+<!-------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
+
+
+<br> <br> <br> <br> <br>
+<footer>
+  <div class="footer-content">
+      <h3>AC Studios</h3>
+      <p>thanks for visiting</p>
+      <ul class="socials">
+          <li><a href="https://www.instagram.com/aiden_choi_0116/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCgVFFeNCN1DOIyuiKVESn7g"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://paypal.me/aidenchoi0116?locale.x=en_US"><i class="fa fa-paypal"></i></a></li>
+
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>copyright &copy;2022 Frutta Boba <span>ac studios</span></p>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
