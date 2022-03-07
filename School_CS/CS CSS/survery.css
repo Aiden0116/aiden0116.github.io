@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+/* font-family: 'Comfortaa', cursive; */
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+}
+
+p{
+  color: white;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.title{
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    font-family: cocogooseProReg;
+    font-size: 50px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 10px;
+}
+
+label{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 20px;
+}
+
+/* Style inputs */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    width: 100%;
+    background-color: #9ad2ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add a background color to the submit button on mouse-over */
+  input[type=submit]:hover {
+    background-color: #c2bab8;
+  }
