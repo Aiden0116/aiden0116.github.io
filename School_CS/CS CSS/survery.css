@@ -38,12 +38,12 @@ h2{
 label{
     color: white;
     font-family: 'Comfortaa', cursive;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 /* Style inputs */
 input[type=text], select {
-    width: 100%;
+    width: 30%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -67,4 +67,9 @@ input[type=text], select {
   /* Add a background color to the submit button on mouse-over */
   input[type=submit]:hover {
     background-color: #c2bab8;
+  }
+
+  legend{
+    color: white;
+    font-family: 'Comfortaa', cursive;
   }
