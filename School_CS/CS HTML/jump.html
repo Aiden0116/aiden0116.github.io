@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Back</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Back</a>
+        <br>
+        <a href="slide.html">Slide</a>
+        <br>
+        <a href="animation.html">Animation</a>
+    </nav>
+    <section>
+        <canvas id="myCanvas" width="1000" height="700"></canvas>
+    </section>
+    <footer>
+        <p>&copy;2019</p>
+    </footer>
+    <script>
+        var canvas;
+        var ctx;
+        var requestId;
+        var positionX = 0;
+        var positionY = 68;
+        var isJumping
+        // var time = 0;
+        // const MAX_TIME = 20
+        const JUMP_LOCATION=30;
+        const PEAK_LOCATION=55;
+        const LAND_LOCATION=80;
+
+        const UNIT = 7;
+        window.onload = init;
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            startAnimation();
+        }
+        function startAnimation() {
+            requestId = requestAnimationFrame(animationLoop);
+        }
+        function animationLoop(timeStamp) {
+            // First line inside animation
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBackground();
+            changePositionX();
+            changePositionY();
+            animateMario();
+            // changeTime();
+            
+  
+            requestId = requestAnimationFrame(animationLoop);
+        }
+
+        function drawBackground() {
+            ctx.fillStyle = "purple";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            drawWoodBlocks(0, 84, 20, 1);
+            drawCloud(19, 10, 2);
+            drawCloud(80, 19, 2);
+            
+
+        }
+        function changeTime() {
+            if (time == MAX_TIME) {
+                time = 0;
+            } else {
+                time += 1;
+            }
+
+        }
+        function animateMario() {
+            if (isJumping == true){
+                drawMario3(positionX,positionY)
+            }else {
+                drawMario1(positionX,positionY);
+            }
+        //     if (isJumping=false== 0 <= time && time <= 9) {
+        //         drawMario2(positionX, 68);
+        //     } else if (10 <= time && time <= 20) {
+        //         drawMario3(positionX, 68);
+        //     }
+        }
+        
+        
+        function changePositionX() {
+            if (positionX > canvas.width / UNIT) {
+                positionX = -25;
+            } else {
+                positionX += 1;
+            }
+        }
+        function changePositionY(){
+            if ((JUMP_LOCATION <= positionX) &&(positionX < PEAK_LOCATION)){
+                positionY /=1.08;
+                isJumping = true;
+            } else if ((PEAK_LOCATION <= positionX) &&(positionX < LAND_LOCATION)){
+                positionY *=1.08;
+                isJumping = true;
+            } else {
+                isJumping= false
+            }
+
+        }
+            
+        
+
+    
+
+
+
+    </script>
+    <script src="../drawing/drawWoodBlock.js"></script>
+    <script src="../drawing/drawCloud.js"></script>
+    <script src="../drawing/drawmaincharacter.js"></script>
+    <script src="../ruler.js"></script>
+
+
+
+</body>
+
+</html>
