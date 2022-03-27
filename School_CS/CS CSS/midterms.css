@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+/* font-family: 'Comfortaa', cursive; */
+
+.title {
+    font-family: cocogooseProReg;
+    text-align: center;
+    color: white;
+    margin-top: 10vh;
+}
+
+.title2 {
+    font-family: cocogooseProReg;
+    margin-left: 10vw;
+    color: white;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+.title3 {
+    font-family: cocogooseProReg;
+    margin-left: 10vw;
+    color: white;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    font-size: 20px;
+}
+
+.title4 {
+font-family: 'Comfortaa', cursive;
+    margin-left: 10vw;
+    color: white;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 20px;
+}
+
+
+.poem {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 10vw;
+    font-size: 20px;
+}
+ .link{
+     font-size: 40px;
+ }
+
+ .trip {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 10vw;
+ }
+
+ .trip2 {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+
+ }
+
+ .triplist{
+     list-style: none;
+     display:flex;
+     justify-content: space-evenly;
+     
+ }
+
+ iframe{
+     border-radius: 20px;
+ }
+
+  
+img {
+    margin-left: 10vw;
+    border-radius: 2-px;
+}
+.dog{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.dog2{
+    color: rgb(197, 154, 98);
+    margin-top: 20vh;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 10vw;
+}
+
+.seasons{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+table{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    border-color: white;
+    text-align: center;
+    margin-left: 40vw;
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 20px;
+}
+td{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+label{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #9ad2ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: #c2bab8;
+  }
+
+  legend{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  ol{
+      font-family: 'Comfortaa', cursive;
+      color: white;
+      margin-left: 20vw;
+  }
+
+  form{
+      margin-left: 20vw;
+  }
