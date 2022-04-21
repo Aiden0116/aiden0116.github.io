@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+/* font-family: 'Comfortaa', cursive; */
+
+body {
+    background-color: #292a2f;
+    
+    font-family: Arial;
+  }
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.title {
+    margin-top: 5vh;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgba(231, 186, 186, 0.134);
+    border-radius: 8px;
+}
+.title2 {
+    margin-top: 5vh;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgba(231, 186, 230, 0.134);
+    border-radius: 8px;
+}
+
+h2{
+    color: rgba(255, 255, 255, 0.795);
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+p{
+    text-align: center;
+}
+
+.box{
+    padding: 10px;
+    background-color: rgba(0, 255, 255, 0.209);
+    border-radius: 50px;
+}
+.box2{
+    padding: 10px;
+    background-color: rgba(251, 0, 255, 0.209);
+    border-radius: 50px;
+}
+
+h3{
+    color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+iframe{
+    border-radius: 30px;
+}
+
+table{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
