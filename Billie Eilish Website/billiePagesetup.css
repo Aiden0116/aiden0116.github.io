@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+@font-face { font-family: coronet; src: url('../utility/Fonts/coronet.ttf'); }
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #886E55;
+
+}
+
+.branding{
+    display: flex ;
+    text-align: center;
+    list-style: none;
+}
+
+.nav li, a, button {
+    /* font-family: 'coronet'; */
+
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a{
+
+}
+
+header {
+    /* background-color: #24252A; */
+    backdrop-filter: blur(10px);
+    box-shadow: #24252a48;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2.5%;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+
+}
+.logo {
+    cursor: pointer;
+    margin-top: 50; 
+}
+
+.logo:hover {
+    color: #0088a9
+}
+
+.nav_links {
+    list-style: none;
+    padding-left: 60px;
+}
+ 
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a { 
+    transition: all 0.3s ease 0;
+}
+
+.nav_links li a:hover{
+    color: #6b6b6b
+}
+
+footer{
+
+    bottom: 0;
+    left: auto;
+    right: auto;
+    background: #202125;
+    height: auto;
+    width: auto;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 35px;
+    color: #fff;
+    margin: auto;
+    width: 100%;
+  
+    
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 12px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a{
+    transition: color .4s ease;
+    font-size: 1.1rem;
+}
+.socials a i{
+    font-size: 12pixel;
+    color:#a5a5a5;
+
+}
+.socials a:hover i{
+    color: rgba(0,136,168,0.8);
+}
+
+.footer-bottom{
+    background: #1d1e22;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footerName{
+    font-size: 20px;
+}
+
+footer p{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+.copyright{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.cta{
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+    background-color: #20212500;
+}
+
+.cta button:hover {
+    background-color: rgba(0,136,168,0.8);
+}
+
+/* Dropdown Button */
+.cta {
+  padding-left: 55px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(78, 78, 78, 0.171); backdrop-filter: blur(100px);   border-radius: 20px;}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */

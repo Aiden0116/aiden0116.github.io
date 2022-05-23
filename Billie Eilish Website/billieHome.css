@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Roboto&display=swap');
+@font-face { font-family: cocogoosePro; src: url('Cocogoose Pro Regular Trial.ttf'); } 
+@font-face { font-family: cocogooseProBlock; src: url('utility/Fonts/Cocogoose Pro Block Border Trial.ttf'); }
+@font-face { font-family: cocogooseProLine; src: url('utility/Fonts/Cocogoose Pro Block Innerline Trial.ttf'); }
+@font-face { font-family: cocogooseProReg; src: url('utility/Fonts/Cocogoose Pro Regular Trial.ttf'); }
+@font-face { font-family: coronet; src: url('../utility/Fonts/coronet.ttf'); }
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Lato:ital,wght@1,300&display=swap');
+
+
+.music{
+    width: 1280px;
+    height: 720px;
+    border-radius: 40px;
+    padding-top: 50px;
+}
+
+.music2{
+    width: 1280px;
+    height: 720px;
+    border-radius: 40px;
+    padding-top: 10px;
+}
+
+.musicVid{
+    position: relative;
+    opacity: 1;
+}
+
+.centering{
+    text-align: center;
+}
+
+.cover{
+
+}
+
+.titleName{
+    font-family: coronet;
+    color: white;
+    padding-top: 10px;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.title{
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.subtex{
+    font-family: coronet;
+    text-align: center;
+    font-weight: 100;
+    color: #D0C39F;
+    font-size: 20px;
+}
+
+.tourTitle{
+    margin-top: 180px;
+    text-align: center;
+
+}
+.tourTitle2{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.tours {
+    width: 850px;
+}
+
+.fragrance{
+    margin-top: 20vh;
+    width: 80vw;
+}
+
+.storeName{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.products{
+    height: 300px;
+}
+.display{
+    display: flex;
+}
+.shop{
+    justify-content: space-between;
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    padding-right: 100px;
+}
+.shopText{
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+.shopsub{
+    color: white;
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 65px;
+    padding-right: 350px;
+}
+
+.shopall{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.nav2{
+    list-style-type: none;
+    color: #D0C39F;
+    display: flex;
+    justify-content: space-evenly;
+}
