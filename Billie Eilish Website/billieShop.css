@@ -12,6 +12,7 @@ h1 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
+    font-style: italic;
     
   }
   
@@ -30,10 +31,11 @@ h1 {
   }
 
   .column h3 {
-      color: white;
+    color: #D0C39F;
       padding-top: 10px;
       text-align: center;
-      font-family: 'Comfortaa', cursive;
+      font-style: italic;
+      font-weight: 60;
   }
   
   h2 {
@@ -46,7 +48,7 @@ h1 {
 
   p {
     text-align:center;
-    color: rgb(149, 149, 149);
+    color: #D0C39F;
     padding-top: 5px;
   }
 
